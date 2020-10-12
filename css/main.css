@@ -4031,7 +4031,9 @@ footer .copyright p, .footer .copyright p { font-weight: 500; }
 
 .services-homeLinks .home-linkbanner:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
 
-.Homecareds { margin-top: 70px; }
+.Homecareds { margin-top: 70px; padding-bottom: 70px; position: relative; }
+
+.Homecareds:after { content: ""; position: absolute; z-index: -1; width: 100%; height: 60%; height: calc(100% - 295px); top: 295px; left: 0; background-color: rgba(189, 157, 126, 0.5); }
 
 .Homecareds div[class^="col-"]:nth-child(1) .card { background-color: #64513d; }
 
@@ -4041,13 +4043,15 @@ footer .copyright p, .footer .copyright p { font-weight: 500; }
 
 .Homecareds div[class^="col-"]:nth-child(3) .card-body { color: #365029; }
 
-.Homecareds .card { height: 614px; border-radius: 8px; border: 0; }
+.Homecareds .card { background-color: #8b634b; height: 614px; border-radius: 8px; border: 0; margin-bottom: 2rem; }
 
-.Homecareds .card .card-body { padding: 2rem; color: #fff; }
+@media (min-width: 1300px) { .Homecareds .card { margin-bottom: 0; } }
+
+.Homecareds .card .card-body { padding: 2rem; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
 .Homecareds .card .card-title { font-size: 1.5rem; font-weight: 700; text-transform: uppercase; max-width: 235px; color: inherit; }
 
-.Homecareds .card .card-text { font-size: 0.94rem; font-weight: 500; color: inherit; }
+.Homecareds .card .card-text { font-size: 0.95rem; font-weight: 400; color: inherit; }
 
 .Homecareds .card img { height: 295px; }
 
@@ -4055,7 +4059,15 @@ footer .copyright p, .footer .copyright p { font-weight: 500; }
 
 .Homecareds .card .card-img-bottom { border-radius: 0 0 8px 8px; }
 
-.card-morelnk { font-size: 1.125rem; font-weight: 400; color: inherit; }
+.Homecareds .card .morelnk { font-size: 1.125rem; font-weight: 400; color: inherit; margin-top: auto; margin-left: auto; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.Homecareds .card .morelnk i.chevron-right { -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
+
+.Homecareds .card .morelnk i.chevron-right:after { content: ""; width: 12px; height: 22px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center; display: inline-block; position: relative; top: 6px; margin-left: 1rem; -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
+
+.Homecareds .card .morelnk:hover { color: #bd9d7e; }
+
+.Homecareds .card .morelnk:hover i.chevron-right:after { -webkit-transform: translateX(5px); -ms-transform: translateX(5px); transform: translateX(5px); }
 
 @-webkit-keyframes fadeIn { 0% { opacity: 0; }
   100% { opacity: 1; } }

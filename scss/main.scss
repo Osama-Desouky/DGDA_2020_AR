@@ -459,6 +459,20 @@ footer,
 // Homecareds section
 .Homecareds {
   margin-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+    height: calc(100% - 295px);
+    top: 295px;
+    left: 0;
+    background-color: rgba($lightBrown, $alpha: 0.5);
+  }
+
   div[class^="col-"]:nth-child(1) {
     .card {
       background-color: $darkBrown;
@@ -478,12 +492,19 @@ footer,
     }
   }
   .card {
+    background-color: $brown;
     height: 614px;
     border-radius: 8px;
     border: 0;
+    margin-bottom: 2rem;
+    @media (min-width: 1300px) {
+      margin-bottom: 0;
+    }
     .card-body {
       padding: 2rem;
       color: $white;
+      display: flex;
+      flex-direction: column;
     }
     .card-title {
       font-size: 1.5rem;
@@ -493,8 +514,8 @@ footer,
       color: inherit;
     }
     .card-text {
-      font-size: 0.94rem;
-      font-weight: 500;
+      font-size: 0.95rem;
+      font-weight: 400;
       color: inherit;
     }
     img {
@@ -506,13 +527,41 @@ footer,
     .card-img-bottom {
       border-radius: 0 0 8px 8px;
     }
+    .morelnk {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: inherit;
+      margin-top: auto;
+      margin-left: auto;
+      @include trans(0.3s);
+      i.chevron-right {
+        transition: inherit;
+        &:after {
+          content: "";
+          width: 12px;
+          height: 22px;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A")
+            no-repeat center;
+          display: inline-block;
+          position: relative;
+          top: 6px;
+          margin-left: 1rem;
+          transition: inherit;
+        }
+      }
+
+      &:hover {
+        color: $lightBrown;
+        i.chevron-right {
+          &:after {
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
   }
 }
-.card-morelnk {
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: inherit;
-}
+
 // animations
 @keyframes fadeIn {
   0% {
