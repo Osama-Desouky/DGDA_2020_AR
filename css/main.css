@@ -3965,7 +3965,7 @@ a:hover { text-decoration: none; }
 
 @media (max-width: 1100px) { .header .navbar .navbar-collapse { background-color: #3b572d; padding: 0 1rem; margin: 0 -15px; } }
 
-.header.scrolled { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; height: 80px; margin-bottom: 60px; position: fixed; position: -webkit-sticky; position: sticky; top: 0; left: 0; right: 0; }
+.header.scrolled { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; height: 80px; margin-bottom: 20px; position: fixed; position: -webkit-sticky; position: sticky; top: 0; left: 0; right: 0; }
 
 .header.scrolled .logo { padding: 0.65rem 0; }
 
@@ -4012,6 +4012,50 @@ footer .socialLinks a i.fab, .footer .socialLinks a i.fab { font-size: 2rem; }
 footer .socialLinks a:hover, .footer .socialLinks a:hover { color: #bd9d7e; }
 
 footer .copyright p, .footer .copyright p { font-weight: 500; }
+
+.home-swiper { height: 550px; height: calc(100vh - 310px); margin-top: -10px; }
+
+.home-swiper .swiper-slide { background-size: cover; background-position: center 0; }
+
+.services-homeLinks { height: 150px; position: relative; z-index: 2; top: -110px; margin-bottom: -110px; }
+
+.services-homeLinks .home-linkbanner { display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; }
+
+.services-homeLinks .home-linkbanner:before { content: ""; position: absolute; z-index: 1; background-color: rgba(0, 0, 0, 0.25); width: 100%; height: 100%; left: 0; bottom: 0; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.services-homeLinks .home-linkbanner--text { position: absolute; z-index: 2; width: 70%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 1.5rem; text-transform: uppercase; padding: 1.5rem; font-weight: 700; color: #fff; }
+
+.services-homeLinks .home-linkbanner img { position: relative; z-index: 0; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.services-homeLinks .home-linkbanner:hover:before { background-color: rgba(0, 0, 0, 0.15); }
+
+.services-homeLinks .home-linkbanner:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.Homecareds { margin-top: 70px; }
+
+.Homecareds div[class^="col-"]:nth-child(1) .card { background-color: #64513d; }
+
+.Homecareds div[class^="col-"]:nth-child(2) .card { background-color: #8b634b; }
+
+.Homecareds div[class^="col-"]:nth-child(3) .card { background-color: #f2e4b1; }
+
+.Homecareds div[class^="col-"]:nth-child(3) .card-body { color: #365029; }
+
+.Homecareds .card { height: 614px; border-radius: 8px; border: 0; }
+
+.Homecareds .card .card-body { padding: 2rem; color: #fff; }
+
+.Homecareds .card .card-title { font-size: 1.5rem; font-weight: 700; text-transform: uppercase; max-width: 235px; color: inherit; }
+
+.Homecareds .card .card-text { font-size: 0.94rem; font-weight: 500; color: inherit; }
+
+.Homecareds .card img { height: 295px; }
+
+.Homecareds .card .card-img-top { border-radius: 8px 8px 0 0; }
+
+.Homecareds .card .card-img-bottom { border-radius: 0 0 8px 8px; }
+
+.card-morelnk { font-size: 1.125rem; font-weight: 400; color: inherit; }
 
 @-webkit-keyframes fadeIn { 0% { opacity: 0; }
   100% { opacity: 1; } }

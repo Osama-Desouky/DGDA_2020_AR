@@ -18,15 +18,67 @@ $(document).ready(function () {
       location.href = this.href;
     });
   }
+  // home swiper fuction
+  if ($(".home-swiper .swiper-slide").length > 1) {
+    var swiper01 = new Swiper(".home-swiper", {
+      loop: false,
+      //slidesPerView: 'auto',
+      effect: "fade",
+      lazy: true,
+      spaceBetween: 10,
+      centeredSlides: true,
+      speed: 2000,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      fadeEffect: {
+        crossFade: true,
+      },
+      // navigation: {
+      //   nextEl: ".mainSlider .swiper-button-next",
+      //   prevEl: ".mainSlider .swiper-button-prev",
+      // },
+    });
+  }
+
+  if ($(".services-homeLinks .swiper-container .swiper-slide").length >= 1) {
+    var swiper02 = new Swiper(".services-homeLinks .swiper-container", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1100: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    });
+  }
 });
 
 /* --- navbar fixed top on scroll fuction--- */
 function stickyheader() {
   var scroll = $(window).scrollTop();
   console.log(scroll);
-  if (scroll > 100) {
+  if (scroll > 110) {
     $(".header").addClass("scrolled");
-  } else if (scroll <= 50) {
+  } else if (scroll <= 70) {
     $(".header").removeClass("scrolled");
   }
 }

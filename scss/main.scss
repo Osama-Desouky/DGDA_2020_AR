@@ -271,7 +271,7 @@ a:hover {
     transition: all 0.3s ease;
     // transition-delay: 0.2s;
     height: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     position: fixed;
     position: sticky;
     top: 0;
@@ -387,6 +387,132 @@ footer,
   }
 }
 
+// home swiper
+.home-swiper {
+  height: 550px;
+  height: calc(100vh - 310px);
+  margin-top: -10px;
+  .swiper-slide {
+    background-size: cover;
+    background-position: center 0;
+  }
+}
+
+//services-homeLinks
+.services-homeLinks {
+  height: 150px;
+  position: relative;
+  z-index: 2;
+  top: -110px;
+  margin-bottom: -110px;
+  .swiper-wrapper {
+    @media (min-width: 1200px) {
+      // justify-content: space-around;
+    }
+  }
+  .home-linkbanner {
+    display: flex;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.25);
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      @include trans(0.3s);
+    }
+    &--text {
+      position: absolute;
+      z-index: 2;
+      width: 70%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      padding: 1.5rem;
+      font-weight: 700;
+      color: $white;
+    }
+    img {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include trans(0.3s);
+    }
+    &:hover {
+      &:before {
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// Homecareds section
+.Homecareds {
+  margin-top: 70px;
+  div[class^="col-"]:nth-child(1) {
+    .card {
+      background-color: $darkBrown;
+    }
+  }
+  div[class^="col-"]:nth-child(2) {
+    .card {
+      background-color: $brown;
+    }
+  }
+  div[class^="col-"]:nth-child(3) {
+    .card {
+      background-color: $yellow;
+    }
+    .card-body {
+      color: $green;
+    }
+  }
+  .card {
+    height: 614px;
+    border-radius: 8px;
+    border: 0;
+    .card-body {
+      padding: 2rem;
+      color: $white;
+    }
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      max-width: 235px;
+      color: inherit;
+    }
+    .card-text {
+      font-size: 0.94rem;
+      font-weight: 500;
+      color: inherit;
+    }
+    img {
+      height: 295px;
+    }
+    .card-img-top {
+      border-radius: 8px 8px 0 0;
+    }
+    .card-img-bottom {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+}
+.card-morelnk {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: inherit;
+}
 // animations
 @keyframes fadeIn {
   0% {
