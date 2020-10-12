@@ -9,3 +9,19 @@
 @font-face { font-family: "Work Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url(../fonts/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QNis.woff), url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QNis.woff) format("woff"); }
 
 @font-face { font-family: "GE SS Two"; font-style: normal; font-weight: 300; src: url(../fonts/GESSTwoLight-Light.woff); }
+
+body.inner { min-height: 100vh; }
+
+body.inner .inner-content .aside { background-color: #DECEBE; }
+
+body.inner .inner-content .aside li { border-bottom: 1px #bd9d7e solid; }
+
+body.inner .inner-content .media-content .media-links .media-item { min-height: 190px; display: block; position: relative; border-radius: 4px; padding: 32px 24px; margin: 12px; text-decoration: none; z-index: 0; overflow: hidden; }
+
+body.inner .inner-content .media-content .media-links .media-item:before { content: ""; position: absolute; z-index: -1; top: -35px; right: -35px; background: #bd9d7e; height: 32px; width: 32px; border-radius: 32px; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); -webkit-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-transition: -webkit-transform 0.25s ease-out; transition: -webkit-transform 0.25s ease-out; -o-transition: transform 0.25s ease-out; transition: transform 0.25s ease-out; transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
+
+body.inner .inner-content .media-content .media-links .media-item:hover:before { -webkit-transform: scale(30); -ms-transform: scale(30); transform: scale(30); }
+
+body.inner .inner-content .media-content .media-links .media-item:hover path { -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; stroke: white; }
+
+body.inner .inner-content .media-content .media-links .media-item:hover h4 { -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; color: #ffffff; }

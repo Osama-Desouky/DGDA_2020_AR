@@ -1,4 +1,57 @@
 @charset "UTF-8";
 @import "settings";
-
 // put new css here
+$lightGold: #DECEBE;
+body.inner {
+    min-height: 100vh;
+    .inner-content {
+        .aside {
+            background-color: $lightGold;
+            li {
+                border-bottom: 1px $lightBrown solid;
+            }
+        }
+        .media-content {
+            .media-links {
+                .media-item {
+                    min-height: 190px;
+                    display: block;
+                    position: relative;
+                    border-radius: 4px;
+                    padding: 32px 24px;
+                    margin: 12px;
+                    text-decoration: none;
+                    z-index: 0;
+                    overflow: hidden;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        top: -35px;
+                        right: -35px;
+                        background: $lightBrown;
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 32px;
+                        transform: scale(1);
+                        transform-origin: 50% 50%;
+                        transition: transform 0.25s ease-out;
+                    }
+                    &:hover:before {
+                        transform: scale(30);
+                    }
+                }
+                .media-item:hover {
+                    path {
+                        transition: all 0.3s ease-out;
+                        stroke: white;
+                    }
+                    h4 {
+                        transition: all 0.3s ease-out;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
