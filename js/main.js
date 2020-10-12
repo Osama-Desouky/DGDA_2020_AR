@@ -30,7 +30,6 @@ function stickyheader() {
     $(".header").removeClass("scrolled");
   }
 }
-
 /* --- opens navbar dropdown on mouse hover --- */
 function toggleDropdown(e) {
   const _d = $(e.target).closest(".dropdown"),
@@ -45,7 +44,6 @@ function toggleDropdown(e) {
     e.type === "mouseleave" ? 300 : 0
   );
 }
-
 $("body")
   .on("mouseenter mouseleave", ".dropdown", toggleDropdown)
   .on("click", ".dropdown-menu a", toggleDropdown);

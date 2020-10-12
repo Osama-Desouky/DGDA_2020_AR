@@ -1,13 +1,4 @@
 {
-    // "less.compile": {
-    //     "outExt": ".css",
-    //     "main": "",
-    //     "autoprefixer": "> 8%, last 3 versions, ie>= 10",
-    //     "out": "../ibs-resources/process-enhancement/css/",
-    //     "sourceMap": false,
-    //     "compress": false,
-
-    // },
     "editor.formatOnSave": false,
 
     "editor.defaultFormatter": "esbenp.prettier-vscode",
