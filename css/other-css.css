@@ -16,12 +16,12 @@ body.inner .inner-content .aside { background-color: #DECEBE; }
 
 body.inner .inner-content .aside li { border-bottom: 1px #bd9d7e solid; }
 
-body.inner .inner-content .media-content .media-links .media-item { min-height: 190px; display: block; position: relative; border-radius: 4px; padding: 32px 24px; margin: 12px; text-decoration: none; z-index: 0; overflow: hidden; }
+body.inner .inner-content .media-content .media-links .media-item { min-height: 190px; position: relative; overflow: hidden; }
 
-body.inner .inner-content .media-content .media-links .media-item:before { content: ""; position: absolute; z-index: -1; top: -35px; right: -35px; background: #bd9d7e; height: 32px; width: 32px; border-radius: 32px; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); -webkit-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-transition: -webkit-transform 0.25s ease-out; transition: -webkit-transform 0.25s ease-out; -o-transition: transform 0.25s ease-out; transition: transform 0.25s ease-out; transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
+body.inner .inner-content .media-content .media-links .media-item:before { content: ""; position: absolute; z-index: -1; top: 50%; left: -35px; background: whitesmoke; height: 100%; width: 32px; border-radius: 32px; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); -webkit-transform-origin: 50% 50%; -ms-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-transition: -webkit-transform 0.25s ease-out; transition: -webkit-transform 0.25s ease-out; -o-transition: transform 0.25s ease-out; transition: transform 0.25s ease-out; transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }
 
-body.inner .inner-content .media-content .media-links .media-item:hover:before { -webkit-transform: scale(30); -ms-transform: scale(30); transform: scale(30); }
+body.inner .inner-content .media-content .media-links .media-item:hover:before { -webkit-transform: scale(35); -ms-transform: scale(35); transform: scale(35); }
 
-body.inner .inner-content .media-content .media-links .media-item:hover path { -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; stroke: white; }
+body.inner .inner-content .media-content .media-links .media-item .arrow { position: relative; left: 0; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-body.inner .inner-content .media-content .media-links .media-item:hover h4 { -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; color: #ffffff; }
+body.inner .inner-content .media-content .media-links .media-item:hover .arrow { margin-right: -10px; }
