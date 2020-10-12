@@ -23,7 +23,7 @@ html {
 }
 body {
   font-family: $font-en;
-  font-weight: 500;
+  font-weight: $regularW;
   @media (min-width: 1100px) {
     overflow-x: hidden;
   }
@@ -70,7 +70,7 @@ a:hover {
         align-items: center;
         border: 1px $green solid;
         font-size: 1.25rem;
-        font-weight: 500;
+        font-weight: $regularW;
         text-transform: uppercase;
         @media (min-width: 375px) {
           width: 48px;
@@ -149,7 +149,7 @@ a:hover {
       .nav-link {
         text-transform: uppercase;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: $regularW;
         color: $white;
         @media (min-width: 1100px) {
           padding: 0.5rem 0.7rem;
@@ -182,7 +182,7 @@ a:hover {
           display: block;
           color: $white;
           font-size: 18px;
-          font-weight: 600;
+          font-weight: $simiboldW;
           text-transform: uppercase;
           padding: 1rem;
           border-bottom: 1px $lightBrown solid;
@@ -274,6 +274,7 @@ a:hover {
     margin-bottom: 20px;
     position: fixed;
     position: sticky;
+    z-index: 1200;
     top: 0;
     left: 0;
     right: 0;
@@ -286,13 +287,16 @@ a:hover {
 .btn {
   height: 3rem;
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: $simiboldW;
   padding: 0 38px;
   text-transform: capitalize;
   border-radius: 6px;
 }
 .btn-secondary {
   color: $green;
+}
+.form-group {
+  margin-bottom: rems(24);
 }
 .form-control {
   height: 3rem;
@@ -316,7 +320,7 @@ footer,
       margin: 1rem 0.2rem;
       a {
         font-size: 1.125rem;
-        font-weight: 300;
+        font-weight: $lighterW;
         text-transform: capitalize;
         color: inherit;
         @include trans(0.3s);
@@ -366,7 +370,7 @@ footer,
   .socialLinks {
     span {
       font-size: 1.5rem;
-      font-weight: 600;
+      font-weight: $simiboldW;
       text-transform: capitalize;
     }
     a {
@@ -382,7 +386,7 @@ footer,
   }
   .copyright {
     p {
-      font-weight: 500;
+      font-weight: $regularW;
     }
   }
 }
@@ -398,8 +402,8 @@ footer,
   }
 }
 
-//services-homeLinks
-.services-homeLinks {
+//Services-HomeLinks
+.Services-HomeLinks {
   height: 150px;
   position: relative;
   z-index: 2;
@@ -434,7 +438,7 @@ footer,
       font-size: 1.5rem;
       text-transform: uppercase;
       padding: 1.5rem;
-      font-weight: 700;
+      font-weight: $boldW;
       color: $white;
     }
     img {
@@ -456,10 +460,8 @@ footer,
   }
 }
 
-// Homecareds section
-.Homecareds {
-  margin-top: 70px;
-  padding-bottom: 70px;
+// HomeCards section
+.top-shade-bg {
   position: relative;
   &:after {
     content: "";
@@ -467,12 +469,33 @@ footer,
     z-index: -1;
     width: 100%;
     height: 60%;
-    height: calc(100% - 295px);
-    top: 295px;
+    height: 50%;
+    top: 0;
     left: 0;
     background-color: rgba($lightBrown, $alpha: 0.5);
   }
-
+}
+.bottom-shade-bg {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+    height: 50%;
+    top: 50%;
+    left: 0;
+    background-color: rgba($lightBrown, $alpha: 0.5);
+  }
+}
+.HomeCards {
+  margin-top: 70px;
+  padding-bottom: 70px;
+  &:after {
+    height: calc(100% - 295px);
+    top: 295px;
+  }
   div[class^="col-"]:nth-child(1) {
     .card {
       background-color: $darkBrown;
@@ -489,6 +512,23 @@ footer,
     }
     .card-body {
       color: $green;
+    }
+  }
+  div[class^="col-"]:nth-child(odd) {
+    .card {
+      img {
+        order: 0;
+      }
+    }
+  }
+  div[class^="col-"]:nth-child(even) {
+    .card {
+      img {
+        order: 1;
+        &.card-img-top {
+          border-radius: 0 0 8px 8px;
+        }
+      }
     }
   }
   .card {
@@ -508,14 +548,14 @@ footer,
     }
     .card-title {
       font-size: 1.5rem;
-      font-weight: 700;
+      font-weight: $boldW;
       text-transform: uppercase;
       max-width: 235px;
       color: inherit;
     }
     .card-text {
       font-size: 0.95rem;
-      font-weight: 400;
+      font-weight: $lightW;
       color: inherit;
     }
     img {
@@ -524,12 +564,10 @@ footer,
     .card-img-top {
       border-radius: 8px 8px 0 0;
     }
-    .card-img-bottom {
-      border-radius: 0 0 8px 8px;
-    }
+
     .morelnk {
       font-size: 1.125rem;
-      font-weight: 400;
+      font-weight: $lightW;
       color: inherit;
       margin-top: auto;
       margin-left: auto;
@@ -561,7 +599,34 @@ footer,
     }
   }
 }
-
+.btnWizArrow {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23365029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 85% center;
+  padding-right: 3rem;
+  @include trans(0.3s);
+  &:hover {
+    background-position: 90% center;
+  }
+}
+.py-70 {
+  padding: 70px 0;
+}
+.green-bg {
+  background-color: $green;
+  color: $white;
+}
+h1 {
+  font-size: rems(48);
+  font-weight: $simiboldW;
+}
+.HomeForm {
+  p {
+    @include fontsize(20);
+    font-weight: $regularW;
+    max-width: 732px;
+  }
+}
 // animations
 @keyframes fadeIn {
   0% {

@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
   AOS.init({
     duration: 600,
     easing: "ease-in-out",
@@ -42,8 +42,8 @@ $(document).ready(function () {
     });
   }
 
-  if ($(".services-homeLinks .swiper-container .swiper-slide").length >= 1) {
-    var swiper02 = new Swiper(".services-homeLinks .swiper-container", {
+  if ($(".Services-HomeLinks .swiper-slide").length >= 1) {
+    var swiper02 = new Swiper(".Services-HomeLinks .swiper-container", {
       slidesPerView: 1,
       spaceBetween: 30,
       breakpoints: {
