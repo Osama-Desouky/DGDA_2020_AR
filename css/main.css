@@ -4083,17 +4083,47 @@ footer .copyright p, .footer .copyright p { font-weight: 500; }
 
 .HomeCards .card .morelnk:hover i.chevron-right:after { -webkit-transform: translateX(5px); -ms-transform: translateX(5px); transform: translateX(5px); }
 
-.btnWizArrow { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23365029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"); background-repeat: no-repeat; background-position: 85% center; padding-right: 3rem; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+.btnWizArrow { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23365029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"); background-repeat: no-repeat; background-position: 80% center; padding-right: 3.5rem; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-.btnWizArrow:hover { background-position: 90% center; }
+.btnWizArrow:hover { background-position: 85% center; }
 
 .py-70 { padding: 70px 0; }
 
 .green-bg { background-color: #365029; color: #fff; }
 
+.baige-bg { background-color: #fff6ed; }
+
+.white-bg { background-color: #fff; }
+
 h1 { font-size: 3rem; font-weight: 600; }
 
+h2 { font-size: 2.5rem; font-weight: 600; text-transform: capitalize; }
+
 .HomeForm p { font-size: 1.25rem; font-weight: 500; max-width: 732px; }
+
+.event-cal .ui-datepicker-inline { width: 100%; height: 395px; border: 0; background: none; font-family: inherit; }
+
+.event-cal .ui-datepicker-inline .ui-datepicker-header { border: 0; background: none; font-size: 1.25rem; font-weight: 600; color: #365029; text-transform: uppercase; }
+
+.event-cal .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev, .event-cal .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next { background: none; border: 0; background-repeat: no-repeat; background-position: center; top: 0; cursor: pointer; }
+
+.event-cal .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev:hover, .event-cal .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next:hover { border: 1px rgba(189, 157, 126, 0.5) solid; }
+
+.event-cal .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-prev { left: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='17' viewBox='0 0 10 17'%3E%3Cpath id='Arrow_left' data-name='Arrow left' d='M8.37,17,0,8.5,8.37,0,10,1.545,3.152,8.5,10,15.455Z' fill='%23c9c9c9'/%3E%3C/svg%3E%0A"); }
+
+.event-cal .ui-datepicker-inline .ui-datepicker-header .ui-datepicker-next { right: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='17' viewBox='0 0 10 17'%3E%3Cpath id='Arrow_left' data-name='Arrow left' d='M8.37,17,0,8.5,8.37,0,10,1.545,3.152,8.5,10,15.455Z' fill='%23c9c9c9'/%3E%3C/svg%3E%0A"); -webkit-transform: scaleX(-1); -ms-transform: scaleX(-1); transform: scaleX(-1); }
+
+.event-cal .ui-datepicker-inline table.ui-datepicker-calendar thead { border-bottom: 2px #f3f3f3 solid; font-family: inherit; }
+
+.event-cal .ui-datepicker-inline table.ui-datepicker-calendar thead th { font-family: inherit; font-size: 1.125rem; font-weight: 600; color: #999; }
+
+.event-cal .ui-datepicker-inline table.ui-datepicker-calendar td { padding: 5px 10px; font-size: 1rem; color: #000; }
+
+.event-cal .ui-datepicker-inline table.ui-datepicker-calendar td a.ui-state-default { width: 40px; height: 40px; margin: auto; text-align: center; line-height: 2; border: 0; background: none; font-size: inherit; color: inherit; border-radius: 2px; }
+
+.event-cal .ui-datepicker-inline table.ui-datepicker-calendar td.ui-datepicker-today a.ui-state-highlight { background: #f4e8dc; font-weight: 600; }
+
+.event-cal .ui-datepicker-inline table.ui-datepicker-calendar td.ui-datepicker-current-day a.ui-state-active { background: #bd9d7e; font-weight: 600; color: #fff; }
 
 @-webkit-keyframes fadeIn { 0% { opacity: 0; }
   100% { opacity: 1; } }
