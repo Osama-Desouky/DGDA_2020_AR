@@ -2,7 +2,7 @@ $(document).ready(function () {
   AOS.init({
     duration: 600,
     easing: "ease-in-out",
-    once: false,
+    once: true,
   });
 
   /* --- navbar fixed top on scroll --- */
