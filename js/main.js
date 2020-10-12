@@ -70,6 +70,10 @@ $(function () {
       },
     });
   }
+  // datepicker calendar
+  $("#datepicker").datepicker({
+    dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
+  });
 });
 
 /* --- navbar fixed top on scroll fuction--- */
