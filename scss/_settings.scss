@@ -1,0 +1,115 @@
+// variables
+$green: #365029;
+$lightBrown: #bd9d7e;
+$brown: #8b634b;
+$darkBrown: #64513d;
+$yellow: #f2e4b1;
+$white: #fff;
+$warning: #e74646;
+
+$font-en: "Work Sans", sans-serif;
+$font-ar: "GE SS Two", sans-serif;
+// Fonts
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNis.woff),
+    url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNis.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNis.woff),
+    url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNis.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K3vXNis.woff),
+    url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K3vXNis.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNis.woff),
+    url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNis.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QNis.woff),
+    url(https://fonts.gstatic.com/s/worksans/v8/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QNis.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "GE SS Two";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/GESSTwoLight-Light.woff);
+}
+
+// mixins
+
+@mixin trans($duration) {
+  transition: all $duration ease;
+}
+
+// ============bootstrap 4 settings ============
+// Defualt Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 768px,
+  m1100: 1100px,
+  m1200: 1200px,
+  lg: 1300px,
+  xl: 1600px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  m1100: 100%,
+  m1200: 1150px,
+  lg: 1266px,
+  // xl: 1600px,
+  // xxl: 1900px,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+);
+
+// Defualt Font Sizes
+$font-size-base: 16px; // for smaller use 14px
+$font-size-base: 1rem; // for smaller use 0.875rem
+$line-height-base: 1.2;
+
+// Defualt Container Width
+$big-container: 1300px; //must be 1330px or 1170px
+
+$body-bg: $white;
+$body-color: $green;
+$theme-colors: (
+  "primary": $green,
+  "secondary": $lightBrown,
+  "yellow": $yellow,
+  "warning": $warning,
+  "lightBrown": $lightBrown,
+  "green": $green,
+);
+// Radius & Spacer
+$border-radius: 0 !default;
+$border-radius-lg: 0 !default;
+$border-radius-sm: 0 !default;
+// $spacer: 1rem;

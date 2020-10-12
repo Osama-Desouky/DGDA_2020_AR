@@ -1,0 +1,20 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "DGDA 2020",
+  "main": "no",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Osama Desouky",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.2",
+    "css-browser-selector": "^0.6.5",
+    "jquery": "^3.5.1",
+    "jquery-ui": "^1.12.1",
+    "popper.js": "^1.16.1"
+  }
+}
