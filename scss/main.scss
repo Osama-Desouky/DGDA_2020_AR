@@ -602,29 +602,127 @@ footer,
 .btnWizArrow {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23365029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
-  background-position: 85% center;
-  padding-right: 3rem;
+  background-position: 80% center;
+  padding-right: 3.5rem;
   @include trans(0.3s);
   &:hover {
-    background-position: 90% center;
+    background-position: 85% center;
   }
 }
 .py-70 {
   padding: 70px 0;
 }
+
+// background colors
 .green-bg {
   background-color: $green;
   color: $white;
 }
+.baige-bg {
+  background-color: #fff6ed;
+}
+.white-bg {
+  background-color: $white;
+}
+
 h1 {
   font-size: rems(48);
   font-weight: $simiboldW;
+}
+h2 {
+  font-size: rems(40);
+  font-weight: $simiboldW;
+  text-transform: capitalize;
 }
 .HomeForm {
   p {
     @include fontsize(20);
     font-weight: $regularW;
     max-width: 732px;
+  }
+}
+
+.HomeEvents {
+}
+.event-cal {
+  .ui-datepicker-inline {
+    width: 100%;
+    height: 395px;
+    border: 0;
+    background: none;
+    font-family: inherit;
+    .ui-datepicker-header {
+      border: 0;
+      background: none;
+      font-size: rems(20);
+      font-weight: $simiboldW;
+      color: $green;
+      text-transform: uppercase;
+
+      .ui-datepicker-prev,
+      .ui-datepicker-next {
+        background: none;
+        border: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 0;
+        cursor: pointer;
+        &:hover {
+          border: 1px rgba($lightBrown, $alpha: 0.5) solid;
+        }
+      }
+      .ui-datepicker-prev {
+        left: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='17' viewBox='0 0 10 17'%3E%3Cpath id='Arrow_left' data-name='Arrow left' d='M8.37,17,0,8.5,8.37,0,10,1.545,3.152,8.5,10,15.455Z' fill='%23c9c9c9'/%3E%3C/svg%3E%0A");
+      }
+      .ui-datepicker-next {
+        right: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='17' viewBox='0 0 10 17'%3E%3Cpath id='Arrow_left' data-name='Arrow left' d='M8.37,17,0,8.5,8.37,0,10,1.545,3.152,8.5,10,15.455Z' fill='%23c9c9c9'/%3E%3C/svg%3E%0A");
+        transform: scaleX(-1);
+      }
+    }
+    table.ui-datepicker-calendar {
+      thead {
+        border-bottom: 2px #f3f3f3 solid;
+        font-family: inherit;
+        th {
+          font-family: inherit;
+          font-size: rems(18);
+          font-weight: $simiboldW;
+          color: #999;
+        }
+      }
+      td {
+        padding: 5px 10px;
+        font-size: rems(16);
+        color: #000;
+        a.ui-state-default {
+          width: 40px;
+          height: 40px;
+          margin: auto;
+          text-align: center;
+          line-height: 2;
+          border: 0;
+          background: none;
+          font-size: inherit;
+          color: inherit;
+          border-radius: 2px;
+        }
+        &.ui-datepicker-today {
+          a.ui-state-highlight {
+            background: #f4e8dc;
+            font-weight: $simiboldW;
+          }
+        }
+        &.ui-datepicker-current-day {
+          a.ui-state-active {
+            background: $lightBrown;
+            font-weight: $simiboldW;
+            color: $white;
+          }
+        }
+      }
+    }
   }
 }
 // animations
