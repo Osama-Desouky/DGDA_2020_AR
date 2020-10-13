@@ -47,6 +47,7 @@ a:hover {
   height: 72px;
   padding: 12px 0;
   text-transform: uppercase;
+  font-weight: $mediumW;
   .icon {
     margin: 0.5rem;
     @media (min-width: 375px) {
@@ -70,7 +71,7 @@ a:hover {
         align-items: center;
         border: 1px $green solid;
         font-size: 1.25rem;
-        font-weight: $regularW;
+        font-weight: inherit;
         text-transform: uppercase;
         @media (min-width: 375px) {
           width: 48px;
@@ -149,7 +150,7 @@ a:hover {
       .nav-link {
         text-transform: uppercase;
         font-size: 1rem;
-        font-weight: $regularW;
+        font-weight: $mediumW;
         color: $white;
         @media (min-width: 1100px) {
           padding: 0.5rem 0.7rem;
@@ -291,6 +292,13 @@ a:hover {
   padding: 0 38px;
   text-transform: capitalize;
   border-radius: 6px;
+  border: 0;
+}
+a.btn {
+  line-height: 44px;
+  &-primary.btnWizArrow {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23BD9D7E'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  }
 }
 .btn-secondary {
   color: $green;
@@ -320,7 +328,7 @@ footer,
       margin: 1rem 0.2rem;
       a {
         font-size: 1.125rem;
-        font-weight: $lighterW;
+        font-weight: $lightW;
         text-transform: capitalize;
         color: inherit;
         @include trans(0.3s);
@@ -460,21 +468,8 @@ footer,
   }
 }
 
-// HomeCards section
-.top-shade-bg {
-  position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 60%;
-    height: 50%;
-    top: 0;
-    left: 0;
-    background-color: rgba($lightBrown, $alpha: 0.5);
-  }
-}
+// shaded color bg effect
+.top-shade-bg,
 .bottom-shade-bg {
   position: relative;
   &:after {
@@ -483,12 +478,37 @@ footer,
     z-index: -1;
     width: 100%;
     height: 60%;
-    height: 50%;
-    top: 50%;
+    top: 0;
     left: 0;
     background-color: rgba($lightBrown, $alpha: 0.5);
   }
 }
+.bottom-shade-bg {
+  &:after {
+    top: 50%;
+  }
+}
+.top-shade-bg-dark,
+.bottom-shade-bg-dark {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    background-color: $green;
+  }
+}
+.bottom-shade-bg-dark {
+  &:after {
+    top: 50%;
+  }
+}
+
+// HomeCards section
 .HomeCards {
   margin-top: 70px;
   padding-bottom: 70px;
@@ -564,37 +584,42 @@ footer,
     .card-img-top {
       border-radius: 8px 8px 0 0;
     }
-
     .morelnk {
-      font-size: 1.125rem;
-      font-weight: $lightW;
-      color: inherit;
-      margin-top: auto;
-      margin-left: auto;
-      @include trans(0.3s);
       i.chevron-right {
-        transition: inherit;
         &:after {
-          content: "";
-          width: 12px;
-          height: 22px;
-          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A")
-            no-repeat center;
-          display: inline-block;
-          position: relative;
           top: 6px;
-          margin-left: 1rem;
-          transition: inherit;
         }
       }
+    }
+  }
+}
+.morelnk {
+  font-size: 1.125rem;
+  font-weight: $lightW;
+  color: inherit;
+  margin-top: auto;
+  margin-left: auto;
+  @include trans(0.3s);
+  i.chevron-right {
+    transition: inherit;
+    &:after {
+      content: "";
+      width: 12px;
+      height: 22px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A")
+        no-repeat center;
+      display: inline-block;
+      position: relative;
+      margin-left: 1rem;
+      transition: inherit;
+    }
+  }
 
-      &:hover {
-        color: $lightBrown;
-        i.chevron-right {
-          &:after {
-            transform: translateX(5px);
-          }
-        }
+  &:hover {
+    color: $lightBrown;
+    i.chevron-right {
+      &:after {
+        transform: translateX(5px);
       }
     }
   }
@@ -612,11 +637,23 @@ footer,
 .py-70 {
   padding: 70px 0;
 }
-
+.pt-70 {
+  padding-top: 70px;
+}
+.pb-70 {
+  padding-bottom: 70px;
+}
 // background colors
 .green-bg {
   background-color: $green;
   color: $white;
+  a,
+  a.morelnk {
+    color: inherit;
+  }
+  .date {
+    color: $green;
+  }
 }
 .baige-bg {
   background-color: #fff6ed;
@@ -642,12 +679,15 @@ h2 {
   }
 }
 
-.HomeEvents {
+section.HomeEvents {
+  .white-bg {
+    box-shadow: 0px 16px 23px rgba(0, 0, 0, 0.04);
+  }
 }
 .event-cal {
   .ui-datepicker-inline {
     width: 100%;
-    height: 395px;
+    height: 370px;
     border: 0;
     background: none;
     font-family: inherit;
@@ -693,11 +733,12 @@ h2 {
         }
       }
       td {
-        padding: 5px 10px;
+        padding: 10px 0.5%;
         font-size: rems(16);
         color: #000;
-        a.ui-state-default {
-          width: 40px;
+        .ui-state-default {
+          width: 100%;
+          max-width: 40px;
           height: 40px;
           margin: auto;
           text-align: center;
@@ -709,18 +750,318 @@ h2 {
           border-radius: 2px;
         }
         &.ui-datepicker-today {
-          a.ui-state-highlight {
+          .ui-state-highlight {
             background: #f4e8dc;
             font-weight: $simiboldW;
           }
         }
         &.ui-datepicker-current-day {
-          a.ui-state-active {
+          .ui-state-active {
             background: $lightBrown;
             font-weight: $simiboldW;
             color: $white;
           }
         }
+        &.ui-datepicker-other-month {
+          opacity: 1;
+          .ui-state-default {
+            color: #999;
+          }
+        }
+      }
+    }
+    .ui-widget-header .ui-icon {
+      background-image: none;
+    }
+  }
+}
+
+// home event swiper
+.EventSwiper {
+  .evntNavigation {
+    position: relative;
+    height: 48px;
+    margin-bottom: rems(5);
+    display: flex;
+    align-items: center;
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 48px;
+      height: 48px;
+      &:after {
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg id='Group_7' data-name='Group 7' xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Crect id='Rectangle' width='48' height='48' fill='none'/%3E%3Cg id='chevron' transform='translate(16 8)'%3E%3Cpath id='Path' d='M14.917,13.349,2.11.367a1.226,1.226,0,0,0-1.747,0,1.26,1.26,0,0,0,0,1.768L13.168,15.116a1.262,1.262,0,0,1,0,1.769L.361,29.867a1.26,1.26,0,0,0,0,1.768,1.226,1.226,0,0,0,1.747,0L14.916,18.652A3.785,3.785,0,0,0,14.917,13.349Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
+      }
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+    .swiper-button-prev {
+      right: rems(62);
+      left: auto;
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+    .swiper-pagination-bullet {
+      margin-right: rems(8);
+      &-active {
+        background: $lightBrown;
+      }
+    }
+  }
+  .event-item {
+    &--img {
+      max-width: 100%;
+      max-height: 360px;
+    }
+    &--text {
+      @media (min-width: 1200px) {
+        margin-right: 1rem;
+      }
+      h3 {
+        font-size: rems(32);
+        font-weight: $boldW;
+      }
+      p {
+        font-size: rems(16);
+        font-weight: $regularW;
+        line-height: rems(19);
+      }
+    }
+  }
+}
+.date {
+  display: inline-block;
+  font-size: rems(14);
+  font-weight: $simiboldW;
+  color: $white;
+  background-color: $lightBrown;
+  padding: rems(8) rems(16);
+  border-radius: rems(8);
+  text-transform: uppercase;
+}
+
+// Section Hero banner @home
+section.hero-banner-sec {
+  .hero-banner {
+    height: auto;
+    position: relative;
+    min-height: 662px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // &--img {
+    //   position: relative;
+    //   z-index: -1;
+    //   width: 100%;
+    //   max-height: 662px;
+    // }
+    &--text {
+      position: relative;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: $white;
+      text-transform: capitalize;
+      h1 {
+        font-size: rems(48);
+        font-weight: $simiboldW;
+      }
+      h3 {
+        font-size: rems(32);
+        font-weight: $lightW;
+      }
+      p {
+        max-width: rems(840);
+        font-size: 1rem;
+        font-weight: $mediumW;
+        line-height: rems(26);
+      }
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+  }
+}
+
+// section Home MC News Section
+section.HomeNews-Swiper {
+  .swiper-container {
+    padding-bottom: 15px;
+    .swiper-scrollbar {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background: #3e5c2f;
+      .swiper-scrollbar-drag {
+        width: 100%;
+        background: $lightBrown;
+      }
+    }
+  }
+  .NewsNavigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 48px;
+    margin-bottom: rems(5);
+    display: flex;
+    align-items: center;
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 48px;
+      height: 48px;
+      &:after {
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg id='Group_7' data-name='Group 7' xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Crect id='Rectangle' width='48' height='48' fill='none'/%3E%3Cg id='chevron' transform='translate(16 8)'%3E%3Cpath id='Path' d='M14.917,13.349,2.11.367a1.226,1.226,0,0,0-1.747,0,1.26,1.26,0,0,0,0,1.768L13.168,15.116a1.262,1.262,0,0,1,0,1.769L.361,29.867a1.26,1.26,0,0,0,0,1.768,1.226,1.226,0,0,0,1.747,0L14.916,18.652A3.785,3.785,0,0,0,14.917,13.349Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
+      }
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+    .swiper-button-prev {
+      right: rems(62);
+      left: auto;
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .news-item {
+    &--img {
+      max-height: 370px;
+    }
+    &--text {
+      h3 {
+        font-size: rems(30);
+        font-weight: $simiboldW;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: $regularW;
+        line-height: rems(19);
+      }
+      @media (min-width: 768px) {
+        p {
+          max-height: 115px;
+          overflow: hidden;
+        }
+        .morelnk {
+          margin-top: -55px;
+        }
+      }
+    }
+  }
+}
+
+// section Social media Cards @Home
+section.HomeSocial-Cards {
+  .card-columns {
+    @media (min-width: 1200px) {
+      column-count: 4;
+    }
+    @media (max-width: 1100px) {
+      column-count: 3;
+    }
+    @media (max-width: 768px) {
+      column-count: 2;
+    }
+    @media (max-width: 450px) {
+      column-count: 1;
+    }
+  }
+  .card {
+    border: 0;
+    background-color: rgba($lightBrown, $alpha: 0.1);
+    border-radius: rems(8);
+    margin-bottom: rems(24);
+    &:nth-child(1) {
+      height: 535px;
+    }
+
+    &:nth-child(3) {
+      height: 585px;
+    }
+
+    &:nth-child(5) {
+      height: 535px;
+    }
+
+    img,
+    .card-img-top {
+      border-radius: rems(8) rems(8) 0 0;
+      max-height: 293px;
+      max-width: 100%;
+    }
+    p {
+      font-size: rems(14);
+    }
+    .card-date {
+      font-weight: $simiboldW;
+      color: rgba($lightBrown, $alpha: 0.5);
+    }
+    .card-text {
+      font-weight: $regularW;
+    }
+    &:before {
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include trans(0.3s);
+    }
+    &:hover {
+      &:before {
+        transform: scale(1.2);
+      }
+    }
+    &.linked-in {
+      // height: 535px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 12px;
+        left: 12px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath id='Shape' d='M29.692,32H2.308A2.311,2.311,0,0,1,0,29.692V2.308A2.31,2.31,0,0,1,2.308,0H29.692A2.311,2.311,0,0,1,32,2.308V29.692A2.311,2.311,0,0,1,29.692,32ZM19.531,15.265c1.292,0,1.975.917,1.975,2.65v6.272h3.9V17.465c0-3.3-1.677-5.277-4.486-5.277A3.848,3.848,0,0,0,17.4,14.124v-1.66h-3.9c.05,1.082,0,11.617,0,11.723h3.9V17.641a2.575,2.575,0,0,1,.129-.951A2.171,2.171,0,0,1,19.531,15.265Zm-12.077-2.8V24.188h3.9V12.464ZM9.428,6.812a2.031,2.031,0,1,0-.051,4.051H9.4a2.032,2.032,0,1,0,.026-4.051Z' fill='%23fff'/%3E%3C/svg%3E%0A");
+      }
+    }
+    &.twitter {
+      // height: 535px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 39px;
+        height: 32px;
+        top: 12px;
+        left: 12px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='39' height='32' viewBox='0 0 39 32'%3E%3Cpath id='Path' d='M39,3.788a16.543,16.543,0,0,1-4.607,1.275A8.015,8.015,0,0,0,37.91.6a15.884,15.884,0,0,1-5.07,1.954A7.979,7.979,0,0,0,19.01,8.076,8.393,8.393,0,0,0,19.2,9.918,22.559,22.559,0,0,1,2.715,1.472,8.19,8.19,0,0,0,1.621,5.553a8.107,8.107,0,0,0,3.551,6.71,7.837,7.837,0,0,1-3.612-.994v.089a8.092,8.092,0,0,0,6.406,7.934,7.906,7.906,0,0,1-2.1.266,7,7,0,0,1-1.514-.138,8.082,8.082,0,0,0,7.471,5.625,15.966,15.966,0,0,1-9.913,3.444A14.831,14.831,0,0,1,0,28.377,22.35,22.35,0,0,0,12.266,32C26.978,32,35.022,19.692,35.022,9.024c0-.357-.012-.7-.029-1.044A16.038,16.038,0,0,0,39,3.788Z' fill='%23fff'/%3E%3C/svg%3E%0A");
+      }
+    }
+    &.instagram {
+      // height: 585px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 12px;
+        left: 12px;
+        background-image: url("data:image/svg+xml,%3Csvg id='Combined_Shape_2' data-name='Combined Shape 2' xmlns='http://www.w3.org/2000/svg' width='31.954' height='31.954' viewBox='0 0 31.954 31.954'%3E%3Cpath id='Combined_Shape' data-name='Combined Shape' d='M9.282,31.954A9.292,9.292,0,0,1,0,22.672V9.282A9.292,9.292,0,0,1,9.282,0h13.39a9.292,9.292,0,0,1,9.282,9.282v13.39a9.292,9.292,0,0,1-9.282,9.282ZM2.5,9.282v13.39a6.793,6.793,0,0,0,6.785,6.785h13.39a6.793,6.793,0,0,0,6.785-6.785V9.282A6.793,6.793,0,0,0,22.672,2.5H9.282A6.793,6.793,0,0,0,2.5,9.282Zm4.868,6.7a8.613,8.613,0,1,1,8.612,8.613A8.621,8.621,0,0,1,7.365,15.977Zm2.5,0a6.116,6.116,0,1,0,6.115-6.115A6.123,6.123,0,0,0,9.861,15.977Zm13.6-8.737a1.248,1.248,0,1,1,1.248,1.248A1.248,1.248,0,0,1,23.466,7.24Z' fill='%23fff'/%3E%3C/svg%3E%0A");
       }
     }
   }
