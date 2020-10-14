@@ -1,4 +1,161 @@
 @charset "UTF-8";
 @import "settings";
-
 // put new css here
+$lightGold: #DECEBE;
+// .readMore {
+//     .arrow {
+//         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.793' height='11.612' viewBox='0 0 17.793 11.612'%3E%3Cpath d='M12.452.126l.071.062L17.607,5.35a.653.653,0,0,1,.062.84l-.062.072-5.084,5.161a.629.629,0,0,1-.9,0,.653.653,0,0,1-.062-.84l.062-.072,4-4.059H.635A.646.646,0,0,1,.549,5.167l.086-.006H15.623l-4-4.059a.653.653,0,0,1-.062-.84l.062-.072A.629.629,0,0,1,12.452.126Z' fill='%23bd9d7e'/%3E%3C/svg%3E");
+//         height: 15px;
+//         width: 18px;
+//         position: relative;
+//         display: inline-block;
+//         top: 5px;
+//         background-repeat: no-repeat;
+//         margin-left: 1rem;
+//     }
+//     &:hover {
+//         .arrow {
+//             margin-left: 2rem;
+//         }
+//     }
+// }
+body.inner {
+    min-height: 100vh;
+    .inner-content {
+        .aside {
+            background-color: $lightGold;
+            li {
+                border-bottom: 1px $lightBrown solid;
+                &.active {
+                    background: $green;
+                    a {
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .media-content {
+            .media-links {
+                .media-item {
+                    min-height: 190px;
+                    position: relative;
+                    overflow: hidden;
+                    -moz-transition: all .2s ease-in;
+                    -o-transition: all .2s ease-in;
+                    -webkit-transition: all .2s ease-in;
+                    transition: all .2s ease-in;
+                    &:hover {
+                        background: rgb(245, 245, 245);
+                    }
+                    .arrow {
+                        position: relative;
+                        left: 0;
+                        transition: all 0.3s ease;
+                    }
+                }
+                .media-item:hover {
+                    .arrow {
+                        margin-right: -10px;
+                    }
+                }
+            }
+            .breadcrumb {
+                .breadcrumb-item {
+                    font-weight: $simiboldW;
+                    font-size: 1.125rem;
+                    a {
+                        color: $lightBrown;
+                    }
+                    +.breadcrumb-item::before {
+                        content: "";
+                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
+                        width: 24px;
+                        height: 12px;
+                        position: relative;
+                        top: 5px;
+                        background-repeat: no-repeat;
+                        -ms-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                        margin-right: .5rem;
+                    }
+                }
+            }
+            .news {
+                .tabs {
+                    .nav {
+                        .nav-link {
+                            min-height: 48px;
+                            color: white;
+                            &:not(.active) {
+                                background-color: $lightGold;
+                            }
+                        }
+                    }
+                }
+                .tab-content {
+                    .news-item {
+                        .readMore {
+                            @include trans(0.3s);
+                            i {
+                                -webkit-transition: inherit;
+                                -o-transition: inherit;
+                                transition: inherit;
+                                &:after {
+                                    content: "";
+                                    width: 18px;
+                                    height: 12px;
+                                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.793' height='11.612' viewBox='0 0 17.793 11.612'%3E%3Cpath d='M12.452.126l.071.062L17.607,5.35a.653.653,0,0,1,.062.84l-.062.072-5.084,5.161a.629.629,0,0,1-.9,0,.653.653,0,0,1-.062-.84l.062-.072,4-4.059H.635A.646.646,0,0,1,.549,5.167l.086-.006H15.623l-4-4.059a.653.653,0,0,1-.062-.84l.062-.072A.629.629,0,0,1,12.452.126Z' fill='%23bd9d7e'/%3E%3C/svg%3E");
+                                    background-repeat: no-repeat;
+                                    display: inline-block;
+                                    margin-left: 1rem;
+                                    -webkit-transition: inherit;
+                                    -o-transition: inherit;
+                                    transition: inherit;
+                                }
+                            }
+                            &:hover {
+                                i:after {
+                                    -webkit-transform: translateX(5px);
+                                    -ms-transform: translateX(5px);
+                                    transform: translateX(5px);
+                                }
+                            }
+                        }
+                    }
+                    .article-item {
+                        .readMore {
+                            @include trans(0.3s);
+                            i {
+                                -webkit-transition: inherit;
+                                -o-transition: inherit;
+                                transition: inherit;
+                                &:after {
+                                    content: "";
+                                    width: 24px;
+                                    height: 12px;
+                                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    display: inline-block;
+                                    margin-left: 1rem;
+                                    -webkit-transition: inherit;
+                                    -o-transition: inherit;
+                                    transition: inherit;
+                                }
+                            }
+                            &:hover {
+                                i:after {
+                                    -webkit-transform: translatey(5px);
+                                    -ms-transform: translatey(5px);
+                                    transform: translatey(5px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
