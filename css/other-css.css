@@ -34,22 +34,24 @@ body.inner .inner-content .media-content .breadcrumb .breadcrumb-item a { color:
 
 body.inner .inner-content .media-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before { content: ""; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); width: 24px; height: 12px; position: relative; top: 5px; background-repeat: no-repeat; -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); margin-right: .5rem; }
 
-body.inner .inner-content .media-content .news .tabs .nav .nav-link { min-height: 48px; color: white; }
+body.inner .inner-content .media-content .readMore { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-body.inner .inner-content .media-content .news .tabs .nav .nav-link:not(.active) { background-color: #DECEBE; }
+body.inner .inner-content .media-content .readMore i { -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
 
-body.inner .inner-content .media-content .news .tab-content .news-item .readMore { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+body.inner .inner-content .media-content .readMore i:after { content: ""; width: 18px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.793' height='11.612' viewBox='0 0 17.793 11.612'%3E%3Cpath d='M12.452.126l.071.062L17.607,5.35a.653.653,0,0,1,.062.84l-.062.072-5.084,5.161a.629.629,0,0,1-.9,0,.653.653,0,0,1-.062-.84l.062-.072,4-4.059H.635A.646.646,0,0,1,.549,5.167l.086-.006H15.623l-4-4.059a.653.653,0,0,1-.062-.84l.062-.072A.629.629,0,0,1,12.452.126Z' fill='%23bd9d7e'/%3E%3C/svg%3E"); background-repeat: no-repeat; display: inline-block; margin-left: 1rem; -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
 
-body.inner .inner-content .media-content .news .tab-content .news-item .readMore i { -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
+body.inner .inner-content .media-content .readMore:hover i:after { -webkit-transform: translateX(5px); -ms-transform: translateX(5px); transform: translateX(5px); }
 
-body.inner .inner-content .media-content .news .tab-content .news-item .readMore i:after { content: ""; width: 18px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.793' height='11.612' viewBox='0 0 17.793 11.612'%3E%3Cpath d='M12.452.126l.071.062L17.607,5.35a.653.653,0,0,1,.062.84l-.062.072-5.084,5.161a.629.629,0,0,1-.9,0,.653.653,0,0,1-.062-.84l.062-.072,4-4.059H.635A.646.646,0,0,1,.549,5.167l.086-.006H15.623l-4-4.059a.653.653,0,0,1-.062-.84l.062-.072A.629.629,0,0,1,12.452.126Z' fill='%23bd9d7e'/%3E%3C/svg%3E"); background-repeat: no-repeat; display: inline-block; margin-left: 1rem; -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
+body.inner .inner-content .news .tabs .nav .nav-link { min-height: 48px; color: white; }
 
-body.inner .inner-content .media-content .news .tab-content .news-item .readMore:hover i:after { -webkit-transform: translateX(5px); -ms-transform: translateX(5px); transform: translateX(5px); }
+body.inner .inner-content .news .tabs .nav .nav-link:not(.active) { background-color: #DECEBE; }
 
-body.inner .inner-content .media-content .news .tab-content .article-item .readMore { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+body.inner .inner-content .news .tab-content .article-item .avatar { width: 86px; height: 86px; }
 
-body.inner .inner-content .media-content .news .tab-content .article-item .readMore i { -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
+body.inner .inner-content .news .tab-content .article-item .readMore { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-body.inner .inner-content .media-content .news .tab-content .article-item .readMore i:after { content: ""; width: 24px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); background-repeat: no-repeat; background-size: contain; background-repeat: no-repeat; display: inline-block; margin-left: 1rem; -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
+body.inner .inner-content .news .tab-content .article-item .readMore i { -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
 
-body.inner .inner-content .media-content .news .tab-content .article-item .readMore:hover i:after { -webkit-transform: translatey(5px); -ms-transform: translatey(5px); transform: translatey(5px); }
+body.inner .inner-content .news .tab-content .article-item .readMore i:after { content: ""; width: 24px; height: 12px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); background-repeat: no-repeat; background-size: contain; background-repeat: no-repeat; display: inline-block; margin-left: 1rem; -webkit-transition: inherit; -o-transition: inherit; transition: inherit; }
+
+body.inner .inner-content .news .tab-content .article-item .readMore:hover i:after { -webkit-transform: translatey(5px); -ms-transform: translatey(5px); transform: translatey(5px); }
