@@ -3,7 +3,7 @@
 
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "HookyQR.beautify",
         "editor.formatOnSave": true
     },
     "[javascript]": {
@@ -11,7 +11,11 @@
         "editor.formatOnSave": true
     },
     "[scss]": {
-        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
     },
     

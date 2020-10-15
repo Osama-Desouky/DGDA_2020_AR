@@ -9,9 +9,9 @@ $warning: #e74646;
 
 $font-en: "Work Sans", sans-serif;
 $font-ar: "GE SS Two", sans-serif;
-$lighterW: 300;
-$lightW: 400;
-$regularW: 500;
+$lightW: 300;
+$regularW: 400;
+$mediumW: 500;
 $simiboldW: 600;
 $boldW: 700;
 
@@ -120,6 +120,7 @@ $theme-colors: (
   "warning": $warning,
   "lightBrown": $lightBrown,
   "green": $green,
+  "white": $white,
 );
 // Radius & Spacer
 $border-radius: 0 !default;

@@ -1,7 +1,7 @@
 $(function () {
   AOS.init({
     duration: 600,
-    easing: "ease-in-out",
+    easing: "linear",
     once: true,
   });
 
@@ -42,6 +42,7 @@ $(function () {
     });
   }
 
+  // home service banners swiper
   if ($(".Services-HomeLinks .swiper-slide").length >= 1) {
     var swiper02 = new Swiper(".Services-HomeLinks .swiper-container", {
       slidesPerView: 1,
@@ -70,16 +71,67 @@ $(function () {
       },
     });
   }
+
+  // home events swiper
+  if ($(".EventSwiper .swiper-slide").length >= 1) {
+    var swiper03 = new Swiper(".EventSwiper .swiper-container", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".EventSwiper .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".EventSwiper .swiper-button-next",
+        prevEl: ".EventSwiper .swiper-button-prev",
+      },
+    });
+  }
   // datepicker calendar
   $("#datepicker").datepicker({
     dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
+    showOtherMonths: true,
+    selectOtherMonths: false,
   });
+
+  // CSV LocalBusiness swiper
+  if ($(".CSV-LocalBusiness .swiper-slide").length >= 1) {
+    var swiper05 = new Swiper(".CSV-LocalBusiness .swiper-container", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: ".CSV-LocalBusiness .swiper-button-next",
+        prevEl: ".CSV-LocalBusiness .swiper-button-prev",
+      },
+      pagination: {
+        el: ".CSV-LocalBusiness .swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+
+  // home MC News swiper
+  if ($(".HomeNews-Swiper .swiper-slide").length >= 1) {
+    var swiper04 = new Swiper(".HomeNews-Swiper .swiper-container", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      scrollbar: {
+        el: ".HomeNews-Swiper .swiper-scrollbar",
+        hide: false,
+      },
+      navigation: {
+        nextEl: ".HomeNews-Swiper .swiper-button-next",
+        prevEl: ".HomeNews-Swiper .swiper-button-prev",
+      },
+    });
+  }
 });
 
 /* --- navbar fixed top on scroll fuction--- */
 function stickyheader() {
   var scroll = $(window).scrollTop();
-  console.log(scroll);
+  // console.log(scroll);
   if (scroll > 110) {
     $(".header").addClass("scrolled");
   } else if (scroll <= 70) {
