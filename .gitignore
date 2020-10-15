@@ -1,7 +1,7 @@
 *.zip
 *.rar
 *.7z
-.vscode
-*.vscode
+# .vscode
+# *.vscode
 package-lock.json
 node_modules
