@@ -1,512 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DGDA-Home</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
-    <link rel="stylesheet" href="css/jquery-ui.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/other-css.css" />
-  </head>
 
-  <body>
-    <!-- top bar section -->
-    <section class="topactions-bar">
-      <div class="container">
-        <div class="d-flex m-auto m-sm-0">
-          <div class="accessibility-wrapper d-inline-flex">
-            <div class="text-settings d-inline-flex">
-              <span class="mt-3 d-none d-m1100-inline">Text setting</span>
-              <div class="font-sizing-wrapper d-inline-flex mx-m1100-3">
-                <span id="fontDecrease" class="font-sizing">A-</span>
-                <span id="fontIncrease" class="font-sizing">A+</span>
-              </div>
-            </div>
-            <div class="contrast-settings d-inline-flex">
-              <span class="mt-3 d-none d-m1100-inline">contrast setting</span>
-              <span class="d-inline-flex" id="colorsettings">
-                <i class="icon color-icon"></i>
-                <span class="mt-3 d-none d-m1100-inline">Color</span>
-              </span>
-              <span class="d-inline-flex" id="HightContrastsettings">
-                <i class="icon HightContrast-icon"></i>
-                <span class="mt-3 d-none d-m1100-inline">High Contrast</span>
-              </span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DGDA-Home</title>
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+  <link rel="stylesheet" href="css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/other-css.css" />
+</head>
+
+<body>
+  <!-- top bar section -->
+  <section class="topactions-bar">
+    <div class="container">
+      <div class="d-flex m-auto m-sm-0">
+        <div class="accessibility-wrapper d-inline-flex">
+          <div class="text-settings d-inline-flex">
+            <span class="mt-3 d-none d-m1100-inline">Text setting</span>
+            <div class="font-sizing-wrapper d-inline-flex mx-m1100-3">
+              <span id="fontDecrease" class="font-sizing">A-</span>
+              <span id="fontIncrease" class="font-sizing">A+</span>
             </div>
           </div>
-
-          <a href="#" class="contactbtn d-inline-flex ml-auto pr-m1100-3">
-            <i class="icon phone-icon"></i>
-            <span class="mt-3 d-none d-m1100-inline">Contact Us</span>
-          </a>
-
-          <a href="#" class="langbtn d-inline-flex"> عربي </a>
+          <div class="contrast-settings d-inline-flex">
+            <span class="mt-3 d-none d-m1100-inline">contrast setting</span>
+            <span class="d-inline-flex" id="colorsettings">
+              <i class="icon color-icon"></i>
+              <span class="mt-3 d-none d-m1100-inline">Color</span>
+            </span>
+            <span class="d-inline-flex" id="HightContrastsettings">
+              <i class="icon HightContrast-icon"></i>
+              <span class="mt-3 d-none d-m1100-inline">High Contrast</span>
+            </span>
+          </div>
         </div>
+
+        <a href="#" class="contactbtn d-inline-flex ml-auto pr-m1100-3">
+          <i class="icon phone-icon"></i>
+          <span class="mt-3 d-none d-m1100-inline">Contact Us</span>
+        </a>
+
+        <a href="#" class="langbtn d-inline-flex"> عربي </a>
       </div>
-    </section>
-    <!-- header section -->
-    <header class="header sticky-top">
-      <div class="container h-100">
-        <nav class="navbar navbar-expand-m1100 navbar-dark p-0 h-100">
-          <a class="logo" href="index.html"
-            ><img src="images/DGDA_logo.svg" alt=""
-          /></a>
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownId"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Our Services</a
-                >
-                <!-- Top Navigation Second Level Dropdown -->
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Urban planning</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Land management</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink"
-                            >Development Permitting</a
-                          >
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Partner Services</a>
-                        </div>
+    </div>
+  </section>
+  <!-- header section -->
+  <header class="header sticky-top">
+    <div class="container h-100">
+      <nav class="navbar navbar-expand-m1100 navbar-dark p-0 h-100">
+        <a class="logo" href="index.html"><img src="images/DGDA_logo.svg" alt="" /></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Our Services</a>
+              <!-- Top Navigation Second Level Dropdown -->
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Urban planning</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Land management</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Development Permitting</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Partner Services</a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownId"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Our Destinations</a
-                >
-                <!-- Top Navigation Second Level Dropdown -->
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Diriyah</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Wadi Safar</a>
-                        </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Our Destinations</a>
+              <!-- Top Navigation Second Level Dropdown -->
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Diriyah</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Wadi Safar</a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownId"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Functions</a
-                >
-                <!-- Top Navigation Second Level Dropdown -->
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink"
-                            >Land and Municipal Affairs</a
-                          >
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink"
-                            >Community Connection</a
-                          >
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink"
-                            >Design & Development</a
-                          >
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Heritage & Culture</a>
-                        </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Functions</a>
+              <!-- Top Navigation Second Level Dropdown -->
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Land and Municipal Affairs</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Community Connection</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Design & Development</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Heritage & Culture</a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownId"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Media Center</a
-                >
-                <!-- Top Navigation Second Level Dropdown -->
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">News</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Media Requests</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Press Room</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="submenuLink">Mutimedia Library</a>
-                        </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Media Center</a>
+              <!-- Top Navigation Second Level Dropdown -->
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">News</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Media Requests</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Press Room</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="submenuLink">Mutimedia Library</a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Teams</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="home-banner">
+    <!-- home hero banner Swiper -->
+    <div class="swiper-container home-swiper" data-aos="fade-in" data-aos-delay="300">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(images/content/banners/banner01.jpg)"></div>
       </div>
-    </header>
-    <section class="home-banner">
-      <!-- home hero banner Swiper -->
-      <div
-        class="swiper-container home-swiper"
-        data-aos="fade-in"
-        data-aos-delay="300"
-      >
+    </div>
+  </section>
+  <!-- home services img swiper -->
+  <section class="Services-HomeLinks">
+    <div class="container" data-aos="fade-in" data-aos-delay="500">
+      <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div
-            class="swiper-slide"
-            style="background-image: url(images/content/banners/banner01.jpg)"
-          ></div>
+          <div class="swiper-slide">
+            <a href="#" class="home-linkbanner">
+              <span class="home-linkbanner--text"> Urban Planing </span>
+              <img src="images/content/banners/UrbanPlaning.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="home-linkbanner">
+              <span class="home-linkbanner--text"> Land Management </span>
+              <img src="images/content/banners/LandManagement.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="home-linkbanner">
+              <span class="home-linkbanner--text">
+                Development Permitting
+              </span>
+              <img src="images/content/banners/DevelopmentPermitting.jpg" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="home-linkbanner">
+              <span class="home-linkbanner--text"> Partner Services </span>
+              <img src="images/content/banners/PartnerServices.jpg" alt="" />
+            </a>
+          </div>
         </div>
+        <!-- Add Scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
-    </section>
-    <!-- home services img swiper -->
-    <section class="Services-HomeLinks">
-      <div class="container" data-aos="fade-in" data-aos-delay="500">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="#" class="home-linkbanner">
-                <span class="home-linkbanner--text"> Urban Planing </span>
-                <img src="images/content/banners/UrbanPlaning.jpg" alt="" />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="home-linkbanner">
-                <span class="home-linkbanner--text"> Land Management </span>
-                <img src="images/content/banners/LandManagement.jpg" alt="" />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="home-linkbanner">
-                <span class="home-linkbanner--text">
-                  Development Permitting
-                </span>
-                <img
-                  src="images/content/banners/DevelopmentPermitting.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="home-linkbanner">
-                <span class="home-linkbanner--text"> Partner Services </span>
-                <img src="images/content/banners/PartnerServices.jpg" alt="" />
-              </a>
+    </div>
+  </section>
+  <!-- home cards section -->
+  <section class="HomeCards bottom-shade-bg">
+    <div class="container">
+      <div class="row">
+        <!-- card repeating item -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" data-aos="fade-in" data-aos-delay="300">
+            <img class="card-img-top" src="images/content/banners/Volunteer Programs.jpg" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Volunteer Programs</h4>
+              <p class="card-text">
+                Learn about the Diriyah Scouts, Community Ambassadors and Host
+                Ambassadors Programs, and how they benefit the Diriyah
+                community and empower its people.
+              </p>
+              <a href="#" class="morelnk">Read More <i class="chevron-right"></i></a>
             </div>
           </div>
-          <!-- Add Scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
-      </div>
-    </section>
-    <!-- home cards section -->
-    <section class="HomeCards bottom-shade-bg">
-      <div class="container">
-        <div class="row">
-          <!-- card repeating item -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card" data-aos="fade-in" data-aos-delay="300">
-              <img
-                class="card-img-top"
-                src="images/content/banners/Volunteer Programs.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h4 class="card-title">Volunteer Programs</h4>
-                <p class="card-text">
-                  Learn about the Diriyah Scouts, Community Ambassadors and Host
-                  Ambassadors Programs, and how they benefit the Diriyah
-                  community and empower its people.
-                </p>
-                <a href="#" class="morelnk"
-                  >Read More <i class="chevron-right"></i
-                ></a>
-              </div>
+        <!-- card repeating item -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" data-aos="fade-in" data-aos-delay="300">
+            <img class="card-img-top" src="images/content/banners/E- Newsletter.jpg" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">E- Newsletter</h4>
+              <p class="card-text">
+                Catch up on the latest updates from Diriyah Gate: accounts of
+                current and upcoming plans, stories from the community,
+                reviews of events, notices, discussions and more.
+              </p>
+              <a href="#" class="morelnk">Read More <i class="chevron-right"></i></a>
             </div>
           </div>
-          <!-- card repeating item -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card" data-aos="fade-in" data-aos-delay="300">
-              <img
-                class="card-img-top"
-                src="images/content/banners/E- Newsletter.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h4 class="card-title">E- Newsletter</h4>
-                <p class="card-text">
-                  Catch up on the latest updates from Diriyah Gate: accounts of
-                  current and upcoming plans, stories from the community,
-                  reviews of events, notices, discussions and more.
-                </p>
-                <a href="#" class="morelnk"
-                  >Read More <i class="chevron-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- card repeating item -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card" data-aos="fade-in" data-aos-delay="300">
-              <img
-                class="card-img-top"
-                src="images/content/banners/Local Businesses.jpg"
-                alt=""
-              />
-              <div class="card-body">
-                <h4 class="card-title">Local Businesses</h4>
-                <p class="card-text">
-                  Support our featured local Diriyah businesses or submit your
-                  own. See the full list of businesses here.
-                </p>
-                <a href="#" class="morelnk"
-                  >Read More <i class="chevron-right"></i
-                ></a>
-              </div>
+        </div>
+        <!-- card repeating item -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" data-aos="fade-in" data-aos-delay="300">
+            <img class="card-img-top" src="images/content/banners/Local Businesses.jpg" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Local Businesses</h4>
+              <p class="card-text">
+                Support our featured local Diriyah businesses or submit your
+                own. See the full list of businesses here.
+              </p>
+              <a href="#" class="morelnk">Read More <i class="chevron-right"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="HomeForm green-bg py-70">
-      <div class="container" data-aos="fade-in" data-aos-delay="50">
-        <h1>Are You a Diriyah Resident?</h1>
-        <p>
-          Please register with us by filling out the form. As a Diriyah
-          resident, you will be given first priority when applying to our
-          services.
-        </p>
-        <div class="row" data-aos="fade-in" data-aos-delay="200">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="form-control"
-                placeholder="Full Name"
-                aria-describedby="helpId"
-              />
-            </div>
+    </div>
+  </section>
+  <section class="HomeForm green-bg py-70">
+    <div class="container" data-aos="fade-in" data-aos-delay="50">
+      <h1>Are You a Diriyah Resident?</h1>
+      <p>
+        Please register with us by filling out the form. As a Diriyah
+        resident, you will be given first priority when applying to our
+        services.
+      </p>
+      <div class="row" data-aos="fade-in" data-aos-delay="200">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="" id="" class="form-control" placeholder="Full Name" aria-describedby="helpId" />
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="form-control"
-                placeholder="Contact Number"
-                aria-describedby="helpId"
-              />
-            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="" id="" class="form-control" placeholder="Contact Number"
+              aria-describedby="helpId" />
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="form-control"
-                placeholder="Email"
-                aria-describedby="helpId"
-              />
-            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="" id="" class="form-control" placeholder="Email" aria-describedby="helpId" />
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input
-                type="button"
-                value="Register"
-                class="btn btn-secondary btnWizArrow"
-              />
-            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <a role="button" href="#" class="btn btn-secondary btnWizArrow">Register</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Home Events section -->
-    <section class="HomeEvents top-shade-bg py-70">
-      <div class="container">
-        <h2 class="mb-3" data-aos="fade-in" data-aos-delay="50">
-          Upcoming Events
-        </h2>
-        <div class="row no-gutters">
-          <div
-            class="col-lg-5 baige-bg"
-            data-aos="fade-in"
-            data-aos-delay="200"
-          >
-            <div class="py-5 px-4">
-              <div id="datepicker" class="event-cal"></div>
-            </div>
+    </div>
+  </section>
+  <!-- Home Events section -->
+  <section class="HomeEvents top-shade-bg py-70">
+    <div class="container">
+      <h2 class="mb-3" data-aos="fade-in" data-aos-delay="50">
+        Upcoming Events
+      </h2>
+      <div class="row no-gutters">
+        <div class="col-lg-5 baige-bg" data-aos="fade-in" data-aos-delay="200">
+          <div class="py-5 px-4">
+            <div id="datepicker" class="event-cal"></div>
           </div>
-          <div
-            class="col-lg-7 white-bg"
-            data-aos="fade-in"
-            data-aos-delay="400"
-          >
-            <div class="py-5 px-4">
-              <div class="EventSwiper">
-                <!-- Swiper -->
-                <div class="swiper-container">
-                  <div class="evntNavigation">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+        </div>
+        <div class="col-lg-7 white-bg" data-aos="fade-in" data-aos-delay="400">
+          <div class="py-5 px-4">
+            <div class="EventSwiper">
+              <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="evntNavigation">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper-wrapper">
+                  <!-- event repeating item -->
+                  <div class="swiper-slide">
+                    <div class="event-item row">
+                      <div class="col-md-6">
+                        <img class="event-item--img" src="images/content/banners/Global Town Festival.jpg" alt="" />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="event-item--text mt-3 mt-md-0">
+                          <a href="#Event1" class="stretched-link"></a>
+                          <span class="date">Jul 16, 2020</span>
+                          <h3 class="mt-5">Global Town Festival</h3>
+                          <p>
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it
+                            over 2000 years old. Richard McClintock, a Latin
+                            professor at Hampden-Sydney College in Virginia,
+                            looked up one of the more obscure Latin words,
+                            consectetur,
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="swiper-wrapper">
-                    <!-- event repeating item -->
-                    <div class="swiper-slide">
-                      <div class="event-item row">
-                        <div class="col-md-6">
-                          <img
-                            class="event-item--img"
-                            src="images/content/banners/Global Town Festival.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <div class="event-item--text mt-3 mt-md-0">
-                            <a href="#Event1" class="stretched-link"></a>
-                            <span class="date">Jul 16, 2020</span>
-                            <h3 class="mt-5">Global Town Festival</h3>
-                            <p>
-                              Contrary to popular belief, Lorem Ipsum is not
-                              simply random text. It has roots in a piece of
-                              classical Latin literature from 45 BC, making it
-                              over 2000 years old. Richard McClintock, a Latin
-                              professor at Hampden-Sydney College in Virginia,
-                              looked up one of the more obscure Latin words,
-                              consectetur,
-                            </p>
-                          </div>
+                  <!-- event repeating item -->
+                  <div class="swiper-slide">
+                    <div class="event-item row">
+                      <div class="col-md-6">
+                        <img class="event-item--img" src="images/content/banners/Global Town Festival.jpg" alt="" />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="event-item--text mt-3 mt-md-0">
+                          <a href="#Event2" class="stretched-link"></a>
+                          <span class="date">Jul 16, 2020</span>
+                          <h3 class="mt-5">Global Town Festival</h3>
+                          <p>
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it
+                            over 2000 years old. Richard McClintock, a Latin
+                            professor at Hampden-Sydney College in Virginia,
+                            looked up one of the more obscure Latin words,
+                            consectetur,
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <!-- event repeating item -->
-                    <div class="swiper-slide">
-                      <div class="event-item row">
-                        <div class="col-md-6">
-                          <img
-                            class="event-item--img"
-                            src="images/content/banners/Global Town Festival.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <div class="event-item--text mt-3 mt-md-0">
-                            <a href="#Event2" class="stretched-link"></a>
-                            <span class="date">Jul 16, 2020</span>
-                            <h3 class="mt-5">Global Town Festival</h3>
-                            <p>
-                              Contrary to popular belief, Lorem Ipsum is not
-                              simply random text. It has roots in a piece of
-                              classical Latin literature from 45 BC, making it
-                              over 2000 years old. Richard McClintock, a Latin
-                              professor at Hampden-Sydney College in Virginia,
-                              looked up one of the more obscure Latin words,
-                              consectetur,
-                            </p>
-                          </div>
-                        </div>
+                  </div>
+                  <!-- event repeating item -->
+                  <div class="swiper-slide">
+                    <div class="event-item row">
+                      <div class="col-md-6">
+                        <img class="event-item--img" src="images/content/banners/Global Town Festival.jpg" alt="" />
                       </div>
-                    </div>
-                    <!-- event repeating item -->
-                    <div class="swiper-slide">
-                      <div class="event-item row">
-                        <div class="col-md-6">
-                          <img
-                            class="event-item--img"
-                            src="images/content/banners/Global Town Festival.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <div class="event-item--text mt-3 mt-md-0">
-                            <a href="#Event3" class="stretched-link"></a>
-                            <span class="date">Jul 16, 2020</span>
-                            <h3 class="mt-5">Global Town Festival</h3>
-                            <p>
-                              Contrary to popular belief, Lorem Ipsum is not
-                              simply random text. It has roots in a piece of
-                              classical Latin literature from 45 BC, making it
-                              over 2000 years old. Richard McClintock, a Latin
-                              professor at Hampden-Sydney College in Virginia,
-                              looked up one of the more obscure Latin words,
-                              consectetur,
-                            </p>
-                          </div>
+                      <div class="col-md-6">
+                        <div class="event-item--text mt-3 mt-md-0">
+                          <a href="#Event3" class="stretched-link"></a>
+                          <span class="date">Jul 16, 2020</span>
+                          <h3 class="mt-5">Global Town Festival</h3>
+                          <p>
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it
+                            over 2000 years old. Richard McClintock, a Latin
+                            professor at Hampden-Sydney College in Virginia,
+                            looked up one of the more obscure Latin words,
+                            consectetur,
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -517,418 +397,329 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Home Discover Diriyah -->
-    <section class="hero-banner-sec pb-70 bottom-shade-bg-dark">
-      <div class="container" data-aos="fade-in" data-aos-delay="200">
-        <div
-          class="hero-banner d-flex flex-column align-items-center"
-          style="
+  <!-- Home Discover Diriyah -->
+  <section class="hero-banner-sec pb-70 bottom-shade-bg-dark">
+    <div class="container">
+      <div class="hero-banner d-flex flex-column align-items-center" style="
             background-image: url(images/content/banners/Discover\ Diriyah.jpg);
-          "
-        >
-          <div
-            class="hero-banner--text d-flex flex-column align-items-center p-5"
-          >
-            <h1>Discover Diriyah</h1>
-            <h3>Diriyah, the Land of Kings and Heroes</h3>
+          ">
+        <div class="hero-banner--text d-flex flex-column align-items-center p-5">
+          <h1 data-aos="fade-in" data-aos-delay="200">Discover Diriyah</h1>
+          <h3 data-aos="fade-in" data-aos-delay="400">Diriyah, the Land of Kings and Heroes</h3>
 
-            <p class="mt-md-3 mt-0 pt-70 text-md-center">
-              Diriyah is a treasure trove of history, culture, beauty, nature
-              and art. World-class modern-day facilities stand side by side next
-              to a UNESCO World Heritage Site with its remarkable architecture
-              and rich legacy. Click here to explore all that Diriyah has to
-              offer.
+          <p class="mt-md-3 mt-0 pt-70 text-md-center" data-aos="fade-in" data-aos-delay="600">
+            Diriyah is a treasure trove of history, culture, beauty, nature
+            and art. World-class modern-day facilities stand side by side next
+            to a UNESCO World Heritage Site with its remarkable architecture
+            and rich legacy. Click here to explore all that Diriyah has to
+            offer.
+          </p>
+          <p class="lead mt-3" data-aos="fade-in" data-aos-delay="600">
+            <a class="btn btn-primary btnWizArrow" href="#" role="button">Read More</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Home media center section -->
+  <section class="HomeNews-Swiper green-bg pb-70">
+    <div class="container" data-aos="fade-in" data-aos-delay="50">
+      <h2>media center</h2>
+      <h5 class="text-uppercase">news</h5>
+      <!-- Swiper -->
+      <div class="swiper-container" data-aos="fade-in" data-aos-delay="200">
+        <div class="NewsNavigation">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-wrapper">
+          <!-- news repeating item -->
+          <div class="swiper-slide">
+            <div class="news-item">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img class="news-item--img img-fluid" src="images/content/banners/newsThumb01.jpg" alt="" />
+                </div>
+                <div class="col-lg-7">
+                  <div class="news-item--text mt-3 mt-md-0">
+                    <span class="date">Jun 30, 2020</span>
+                    <h3 class="mt-5">
+                      Work commences on world’s largest cultural and heritage
+                      development Diriyah Gate, starting with Bujairi District
+                    </h3>
+                    <div class="news-item--description no-gutters mt-5">
+                      <p class="col-md-8">
+                        [Tuesday, 30 June, 2020] Riyadh, KSA– Development work
+                        has commenced on the first phase of Diriyah Gate
+                        Development Authority’s (DGDA’s) 75 Billion SAR ($20
+                        Billion USD) development pipeline, marking the
+                        beginning of a bold new era of construction and
+                        transformation for Diriyah, a city within Riyadh
+                        province, Saudi Arabia.
+                      </p>
+                      <a href="#" class="morelnk d-flex justify-content-end px-2">Read More <i
+                          class="chevron-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- news repeating item -->
+          <div class="swiper-slide">
+            <div class="news-item">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img class="news-item--img img-fluid" src="images/content/banners/newsThumb01.jpg" alt="" />
+                </div>
+                <div class="col-lg-7">
+                  <div class="news-item--text mt-3 mt-md-0">
+                    <span class="date">Jun 30, 2020</span>
+                    <h3 class="mt-5">
+                      Work commences on world’s largest cultural and heritage
+                      development Diriyah Gate, starting with Bujairi District
+                    </h3>
+                    <div class="news-item--description no-gutters mt-5">
+                      <p class="col-md-8">
+                        [Tuesday, 30 June, 2020] Riyadh, KSA– Development work
+                        has commenced on the first phase of Diriyah Gate
+                        Development Authority’s (DGDA’s) 75 Billion SAR ($20
+                        Billion USD) development pipeline, marking the
+                        beginning of a bold new era of construction and
+                        transformation for Diriyah, a city within Riyadh
+                        province, Saudi Arabia.
+                      </p>
+                      <a href="#" class="morelnk d-flex justify-content-end px-2">Read More <i
+                          class="chevron-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- news repeating item -->
+          <div class="swiper-slide">
+            <div class="news-item">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img class="news-item--img img-fluid" src="images/content/banners/newsThumb01.jpg" alt="" />
+                </div>
+                <div class="col-lg-7">
+                  <div class="news-item--text mt-3 mt-md-0">
+                    <span class="date">Jun 30, 2020</span>
+                    <h3 class="mt-5">
+                      Work commences on world’s largest cultural and heritage
+                      development Diriyah Gate, starting with Bujairi District
+                    </h3>
+                    <div class="news-item--description no-gutters mt-5">
+                      <p class="col-md-8">
+                        [Tuesday, 30 June, 2020] Riyadh, KSA– Development work
+                        has commenced on the first phase of Diriyah Gate
+                        Development Authority’s (DGDA’s) 75 Billion SAR ($20
+                        Billion USD) development pipeline, marking the
+                        beginning of a bold new era of construction and
+                        transformation for Diriyah, a city within Riyadh
+                        province, Saudi Arabia.
+                      </p>
+                      <a href="#" class="morelnk d-flex justify-content-end px-2">Read More <i
+                          class="chevron-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Home social media cards -->
+  <section class="HomeSocial-Cards py-70">
+    <div class="container">
+      <div class="card-columns">
+        <!-- social card repeating item -->
+        <div class="card linked-in" data-aos="fade-in" data-aos-delay="100">
+          <img class="card-img-top" src="images/content/banners/linkedin-post01.jpg" class="img-fluid" alt="" />
+          <div class="card-body">
+            <p class="card-date">Jun 30, 2020</p>
+            <p class="card-text">
+              Development work has commenced on the first phase of Diriyah
+              Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
+              Billion USD) development pipeline, marking the beginning of a
+              bold new era of construction and transformation for Diriyah, a
+              city within Riyadh province, Saudi Arabia.
             </p>
-            <p class="lead mt-3">
-              <a class="btn btn-primary btnWizArrow" href="#" role="button"
-                >Read More</a
-              >
+          </div>
+          <a href="#social" class="stretched-link"></a>
+        </div>
+        <!-- social card repeating item -->
+        <div class="card instagram" data-aos="fade-in" data-aos-delay="100">
+          <img class="card-img-top" src="images/content/banners/instagram-post01.jpg" class="img-fluid" alt="" />
+          <div class="card-body">
+            <p class="card-date">Jun 30, 2020</p>
+            <p class="card-text">
+              Development work has commenced on the first phase of Diriyah
+              Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
+              Billion USD) development pipeline, marking the beginning of a
+              bold new era of construction and transformation for Diriyah, a
+              city within Riyadh province, Saudi Arabia.
+            </p>
+          </div>
+          <a href="#social" class="stretched-link"></a>
+        </div>
+        <!-- social card repeating item -->
+        <div class="card twitter" data-aos="fade-in" data-aos-delay="100">
+          <img class="card-img-top" src="images/content/banners/twitter-post01.jpg" class="img-fluid" alt="" />
+          <div class="card-body">
+            <p class="card-date">Jun 30, 2020</p>
+            <p class="card-text">
+              Development work has commenced on the first phase of Diriyah
+              Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
+              Billion USD) development pipeline, marking the beginning of a
+              bold new era of construction and transformation for Diriyah, a
+              city within Riyadh province, Saudi Arabia.
+            </p>
+          </div>
+          <a href="#social" class="stretched-link"></a>
+        </div>
+        <!-- social card repeating item -->
+        <div class="card linked-in" data-aos="fade-in" data-aos-delay="100">
+          <img class="card-img-top" src="images/content/banners/linkedin-post02.jpg" class="img-fluid" alt="" />
+          <div class="card-body">
+            <p class="card-date">Jun 30, 2020</p>
+            <p class="card-text">
+              Development work has commenced on the first phase of Diriyah
+              Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
+              Billion USD) development pipeline, marking the beginning of a
+              bold new era of construction and transformation for Diriyah, a
+              city within Riyadh province, Saudi Arabia.
+            </p>
+          </div>
+          <a href="#social" class="stretched-link"></a>
+        </div>
+        <!-- social card repeating item -->
+        <div class="card instagram" data-aos="fade-in" data-aos-delay="100">
+          <img class="card-img-top" src="images/content/banners/instagram-post02.jpg" class="img-fluid" alt="" />
+          <div class="card-body">
+            <p class="card-date">Jun 30, 2020</p>
+            <p class="card-text">
+              Development work has commenced on the first phase of Diriyah
+              Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
+              Billion USD) development pipeline, marking the beginning of a
+              bold new era of construction and transformation for Diriyah, a
+              city within Riyadh province, Saudi Arabia.
+            </p>
+          </div>
+          <a href="#social" class="stretched-link"></a>
+        </div>
+        <!-- social card repeating item -->
+        <div class="card linked-in" data-aos="fade-in" data-aos-delay="100">
+          <img class="card-img-top" src="images/content/banners/linkedin-post03.jpg" class="img-fluid" alt="" />
+          <div class="card-body">
+            <p class="card-date">Jun 30, 2020</p>
+            <p class="card-text">
+              Development work has commenced on the first phase of Diriyah
+              Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
+              Billion USD) development pipeline, marking the beginning of a
+              bold new era of construction and transformation for Diriyah, a
+              city within Riyadh province, Saudi Arabia.
+            </p>
+          </div>
+          <a href="#social" class="stretched-link"></a>
+        </div>
+        <!-- social card repeating item -->
+        <div class="card instagram" data-aos="fade-in" data-aos-delay="100">
+          <img class="card-img-top" src="images/content/banners/instagram-post03.jpg" class="img-fluid" alt="" />
+          <div class="card-body">
+            <p class="card-date">Jun 30, 2020</p>
+            <p class="card-text">
+              Development work has commenced on the first phase of Diriyah
+              Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
+              Billion USD) development pipeline, marking the beginning of a
+              bold new era of construction and transformation for Diriyah, a
+              city within Riyadh province, Saudi Arabia.
+            </p>
+          </div>
+          <a href="#social" class="stretched-link"></a>
+        </div>
+        <!-- social card repeating item -->
+        <div class="card twitter" data-aos="fade-in" data-aos-delay="100">
+          <img class="card-img-top" src="images/content/banners/twitter-post03.jpg" class="img-fluid" alt="" />
+          <div class="card-body">
+            <p class="card-date">Jun 30, 2020</p>
+            <p class="card-text">
+              Development work has commenced on the first phase of Diriyah
+              Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
+              Billion USD) development pipeline, marking the beginning of a
+              bold new era of construction and transformation for Diriyah, a
+              city within Riyadh province, Saudi Arabia.
+            </p>
+          </div>
+          <a href="#social" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="footer-links" data-aos="fade-in" data-aos-delay="100">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="newsLetter-wrapper" data-aos="fade-in" data-aos-delay="200">
+            <h3>Subscribe to DGDA newsletter</h3>
+            <div class="form-inline">
+              <input type="text" name="" id="" class="form-control" placeholder="Email Address" />
+              <a role="button" href="#" class="btn btn-secondary">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex footerLogo" data-aos="fade-in" data-aos-delay="400">
+            <a href="#" class="d-flex justify-content-end pt-sm-0 pt-3">
+              <img src="images/DGDA_logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5" data-aos="fade-in" data-aos-delay="600" data-aos-offset="0">
+        <div class="col-md-6">
+          <div class="socialLinks">
+            <span>Follow Us</span>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="copyright d-flex justify-content-end pt-sm-0 pt-3">
+            <p>
+              © All rights reserved to Diriyah Gate Development Authority 2020
             </p>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Home media center section -->
-    <section class="HomeNews-Swiper green-bg pb-70">
-      <div class="container" data-aos="fade-in" data-aos-delay="50">
-        <h2>media center</h2>
-        <h5 class="text-uppercase">news</h5>
-        <!-- Swiper -->
-        <div class="swiper-container" data-aos="fade-in" data-aos-delay="200">
-          <div class="NewsNavigation">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <div class="swiper-wrapper">
-            <!-- news repeating item -->
-            <div class="swiper-slide">
-              <div class="news-item">
-                <div class="row">
-                  <div class="col-lg-5">
-                    <img
-                      class="news-item--img img-fluid"
-                      src="images/content/banners/newsThumb01.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-lg-7">
-                    <div class="news-item--text mt-3 mt-md-0">
-                      <span class="date">Jun 30, 2020</span>
-                      <h3 class="mt-5">
-                        Work commences on world’s largest cultural and heritage
-                        development Diriyah Gate, starting with Bujairi District
-                      </h3>
-                      <div class="news-item--description no-gutters mt-5">
-                        <p class="col-md-8">
-                          [Tuesday, 30 June, 2020] Riyadh, KSA– Development work
-                          has commenced on the first phase of Diriyah Gate
-                          Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                          Billion USD) development pipeline, marking the
-                          beginning of a bold new era of construction and
-                          transformation for Diriyah, a city within Riyadh
-                          province, Saudi Arabia.
-                        </p>
-                        <a
-                          href="#"
-                          class="morelnk d-flex justify-content-end px-2"
-                          >Read More <i class="chevron-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- news repeating item -->
-            <div class="swiper-slide">
-              <div class="news-item">
-                <div class="row">
-                  <div class="col-lg-5">
-                    <img
-                      class="news-item--img img-fluid"
-                      src="images/content/banners/newsThumb01.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-lg-7">
-                    <div class="news-item--text mt-3 mt-md-0">
-                      <span class="date">Jun 30, 2020</span>
-                      <h3 class="mt-5">
-                        Work commences on world’s largest cultural and heritage
-                        development Diriyah Gate, starting with Bujairi District
-                      </h3>
-                      <div class="news-item--description no-gutters mt-5">
-                        <p class="col-md-8">
-                          [Tuesday, 30 June, 2020] Riyadh, KSA– Development work
-                          has commenced on the first phase of Diriyah Gate
-                          Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                          Billion USD) development pipeline, marking the
-                          beginning of a bold new era of construction and
-                          transformation for Diriyah, a city within Riyadh
-                          province, Saudi Arabia.
-                        </p>
-                        <a
-                          href="#"
-                          class="morelnk d-flex justify-content-end px-2"
-                          >Read More <i class="chevron-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- news repeating item -->
-            <div class="swiper-slide">
-              <div class="news-item">
-                <div class="row">
-                  <div class="col-lg-5">
-                    <img
-                      class="news-item--img img-fluid"
-                      src="images/content/banners/newsThumb01.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-lg-7">
-                    <div class="news-item--text mt-3 mt-md-0">
-                      <span class="date">Jun 30, 2020</span>
-                      <h3 class="mt-5">
-                        Work commences on world’s largest cultural and heritage
-                        development Diriyah Gate, starting with Bujairi District
-                      </h3>
-                      <div class="news-item--description no-gutters mt-5">
-                        <p class="col-md-8">
-                          [Tuesday, 30 June, 2020] Riyadh, KSA– Development work
-                          has commenced on the first phase of Diriyah Gate
-                          Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                          Billion USD) development pipeline, marking the
-                          beginning of a bold new era of construction and
-                          transformation for Diriyah, a city within Riyadh
-                          province, Saudi Arabia.
-                        </p>
-                        <a
-                          href="#"
-                          class="morelnk d-flex justify-content-end px-2"
-                          >Read More <i class="chevron-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-scrollbar"></div>
-        </div>
-      </div>
-    </section>
-    <!-- Home social media cards -->
-    <section class="HomeSocial-Cards py-70">
-      <div class="container">
-        <div class="card-columns">
-          <!-- social card repeating item -->
-          <div class="card linked-in" data-aos="fade-in" data-aos-delay="100">
-            <img
-              class="card-img-top"
-              src="images/content/banners/linkedin-post01.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="card-date">Jun 30, 2020</p>
-              <p class="card-text">
-                Development work has commenced on the first phase of Diriyah
-                Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                Billion USD) development pipeline, marking the beginning of a
-                bold new era of construction and transformation for Diriyah, a
-                city within Riyadh province, Saudi Arabia.
-              </p>
-            </div>
-            <a href="#social" class="stretched-link"></a>
-          </div>
-          <!-- social card repeating item -->
-          <div class="card instagram" data-aos="fade-in" data-aos-delay="100">
-            <img
-              class="card-img-top"
-              src="images/content/banners/instagram-post01.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="card-date">Jun 30, 2020</p>
-              <p class="card-text">
-                Development work has commenced on the first phase of Diriyah
-                Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                Billion USD) development pipeline, marking the beginning of a
-                bold new era of construction and transformation for Diriyah, a
-                city within Riyadh province, Saudi Arabia.
-              </p>
-            </div>
-            <a href="#social" class="stretched-link"></a>
-          </div>
-          <!-- social card repeating item -->
-          <div class="card twitter" data-aos="fade-in" data-aos-delay="100">
-            <img
-              class="card-img-top"
-              src="images/content/banners/twitter-post01.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="card-date">Jun 30, 2020</p>
-              <p class="card-text">
-                Development work has commenced on the first phase of Diriyah
-                Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                Billion USD) development pipeline, marking the beginning of a
-                bold new era of construction and transformation for Diriyah, a
-                city within Riyadh province, Saudi Arabia.
-              </p>
-            </div>
-            <a href="#social" class="stretched-link"></a>
-          </div>
-          <!-- social card repeating item -->
-          <div class="card linked-in" data-aos="fade-in" data-aos-delay="100">
-            <img
-              class="card-img-top"
-              src="images/content/banners/linkedin-post02.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="card-date">Jun 30, 2020</p>
-              <p class="card-text">
-                Development work has commenced on the first phase of Diriyah
-                Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                Billion USD) development pipeline, marking the beginning of a
-                bold new era of construction and transformation for Diriyah, a
-                city within Riyadh province, Saudi Arabia.
-              </p>
-            </div>
-            <a href="#social" class="stretched-link"></a>
-          </div>
-          <!-- social card repeating item -->
-          <div class="card instagram" data-aos="fade-in" data-aos-delay="100">
-            <img
-              class="card-img-top"
-              src="images/content/banners/instagram-post02.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="card-date">Jun 30, 2020</p>
-              <p class="card-text">
-                Development work has commenced on the first phase of Diriyah
-                Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                Billion USD) development pipeline, marking the beginning of a
-                bold new era of construction and transformation for Diriyah, a
-                city within Riyadh province, Saudi Arabia.
-              </p>
-            </div>
-            <a href="#social" class="stretched-link"></a>
-          </div>
-          <!-- social card repeating item -->
-          <div class="card linked-in" data-aos="fade-in" data-aos-delay="100">
-            <img
-              class="card-img-top"
-              src="images/content/banners/linkedin-post03.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="card-date">Jun 30, 2020</p>
-              <p class="card-text">
-                Development work has commenced on the first phase of Diriyah
-                Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                Billion USD) development pipeline, marking the beginning of a
-                bold new era of construction and transformation for Diriyah, a
-                city within Riyadh province, Saudi Arabia.
-              </p>
-            </div>
-            <a href="#social" class="stretched-link"></a>
-          </div>
-          <!-- social card repeating item -->
-          <div class="card instagram" data-aos="fade-in" data-aos-delay="100">
-            <img
-              class="card-img-top"
-              src="images/content/banners/instagram-post03.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="card-date">Jun 30, 2020</p>
-              <p class="card-text">
-                Development work has commenced on the first phase of Diriyah
-                Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                Billion USD) development pipeline, marking the beginning of a
-                bold new era of construction and transformation for Diriyah, a
-                city within Riyadh province, Saudi Arabia.
-              </p>
-            </div>
-            <a href="#social" class="stretched-link"></a>
-          </div>
-          <!-- social card repeating item -->
-          <div class="card twitter" data-aos="fade-in" data-aos-delay="100">
-            <img
-              class="card-img-top"
-              src="images/content/banners/twitter-post03.jpg"
-              class="img-fluid"
-              alt=""
-            />
-            <div class="card-body">
-              <p class="card-date">Jun 30, 2020</p>
-              <p class="card-text">
-                Development work has commenced on the first phase of Diriyah
-                Gate Development Authority’s (DGDA’s) 75 Billion SAR ($20
-                Billion USD) development pipeline, marking the beginning of a
-                bold new era of construction and transformation for Diriyah, a
-                city within Riyadh province, Saudi Arabia.
-              </p>
-            </div>
-            <a href="#social" class="stretched-link"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- footer section -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <ul class="footer-links" data-aos="fade-in" data-aos-delay="100">
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="newsLetter-wrapper"
-              data-aos="fade-in"
-              data-aos-delay="200"
-            >
-              <h3>Subscribe to DGDA newsletter</h3>
-              <div class="form-inline">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  class="form-control"
-                  placeholder="Email Address"
-                />
-                <input
-                  type="button"
-                  value="Subscribe"
-                  class="btn btn-secondary"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div
-              class="d-flex footerLogo"
-              data-aos="fade-in"
-              data-aos-delay="400"
-            >
-              <a href="#" class="d-flex justify-content-end pt-sm-0 pt-3">
-                <img src="images/DGDA_logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="row mt-5"
-          data-aos="fade-in"
-          data-aos-delay="600"
-          data-aos-offset="0"
-        >
-          <div class="col-md-6">
-            <div class="socialLinks">
-              <span>Follow Us</span>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="copyright d-flex justify-content-end pt-sm-0 pt-3">
-              <p>
-                © All rights reserved to Diriyah Gate Development Authority 2020
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/css-browser-selector/css_browser_selector.min.js"></script>
-    <script src="node_modules/aos/dist/aos.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/css-browser-selector/css_browser_selector.min.js"></script>
+  <script src="node_modules/aos/dist/aos.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

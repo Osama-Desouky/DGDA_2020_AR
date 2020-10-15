@@ -74,7 +74,7 @@ $(function () {
 
   // home events swiper
   if ($(".EventSwiper .swiper-slide").length >= 1) {
-    var swiper02 = new Swiper(".EventSwiper .swiper-container", {
+    var swiper03 = new Swiper(".EventSwiper .swiper-container", {
       slidesPerView: 1,
       spaceBetween: 30,
       pagination: {
@@ -94,9 +94,26 @@ $(function () {
     selectOtherMonths: false,
   });
 
+  // CSV LocalBusiness swiper
+  if ($(".CSV-LocalBusiness .swiper-slide").length >= 1) {
+    var swiper05 = new Swiper(".CSV-LocalBusiness .swiper-container", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: ".CSV-LocalBusiness .swiper-button-next",
+        prevEl: ".CSV-LocalBusiness .swiper-button-prev",
+      },
+      pagination: {
+        el: ".CSV-LocalBusiness .swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+
   // home MC News swiper
   if ($(".HomeNews-Swiper .swiper-slide").length >= 1) {
-    var swiper02 = new Swiper(".HomeNews-Swiper .swiper-container", {
+    var swiper04 = new Swiper(".HomeNews-Swiper .swiper-container", {
       slidesPerView: 1,
       spaceBetween: 30,
       scrollbar: {
