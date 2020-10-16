@@ -92,54 +92,72 @@ body.inner {
                 }
             }
         }
+        .tabs {
+            .nav {
+                .nav-link {
+                    min-height: 48px;
+                    color: white;
+                    &:not(.active) {
+                        background-color: $lightGold;
+                    }
+                }
+            }
+        }
         .news {
-            .tabs {
-                .nav {
-                    .nav-link {
-                        min-height: 48px;
-                        color: white;
-                        &:not(.active) {
-                            background-color: $lightGold;
+            .news-item {}
+            .article-item {
+                .avatar {
+                    width: 86px;
+                    height: 86px;
+                }
+                .readMore {
+                    @include trans(0.3s);
+                    i {
+                        -webkit-transition: inherit;
+                        -o-transition: inherit;
+                        transition: inherit;
+                        &:after {
+                            content: "";
+                            width: 24px;
+                            height: 12px;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            display: inline-block;
+                            margin-left: 1rem;
+                            -webkit-transition: inherit;
+                            -o-transition: inherit;
+                            transition: inherit;
+                        }
+                    }
+                    &:hover {
+                        i:after {
+                            -webkit-transform: translatey(5px);
+                            -ms-transform: translatey(5px);
+                            transform: translatey(5px);
                         }
                     }
                 }
             }
-            .tab-content {
-                .news-item {}
-                .article-item {
-                    .avatar {
-                        width: 86px;
-                        height: 86px;
-                    }
-                    .readMore {
-                        @include trans(0.3s);
-                        i {
-                            -webkit-transition: inherit;
-                            -o-transition: inherit;
-                            transition: inherit;
-                            &:after {
-                                content: "";
-                                width: 24px;
-                                height: 12px;
-                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
-                                background-repeat: no-repeat;
-                                background-size: contain;
-                                background-repeat: no-repeat;
-                                display: inline-block;
-                                margin-left: 1rem;
-                                -webkit-transition: inherit;
-                                -o-transition: inherit;
-                                transition: inherit;
-                            }
-                        }
-                        &:hover {
-                            i:after {
-                                -webkit-transform: translatey(5px);
-                                -ms-transform: translatey(5px);
-                                transform: translatey(5px);
-                            }
-                        }
-                    }
+        }
+        .multimedia {
+            .video {
+                &:before {
+                    content: "";
+                    width: 64px;
+                    height: 64px;
+                    position: absolute;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='rgba(255,255,255,0.51)'/%3E%3Cpath d='M9.711,3.578a2,2,0,0,1,3.578,0l8.264,16.528A2,2,0,0,1,19.764,23H3.236a2,2,0,0,1-1.789-2.894Z' transform='translate(45 20.767) rotate(90)' fill='%23365029'/%3E%3C/svg%3E");
+                    z-index: 10;
+                    left: 38%;
+                    top: 33%;
+                    bottom: 0;
+                    opacity: 0.7;
+                    @include trans(0.3s);
+                }
+                &:hover:before {
+                    opacity: 1;
                 }
             }
         }

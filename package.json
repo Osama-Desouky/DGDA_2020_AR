@@ -9,6 +9,7 @@
   "author": "Osama Desouky",
   "license": "ISC",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "aos": "^2.3.4",
     "bootstrap": "^4.5.2",
