@@ -128,6 +128,34 @@ $(function () {
   }
 });
 
+// custom file upload plugin init
+if ($(".file-loading").length) {
+  $(".Cfile-upload").fileinput({
+    showUpload: false,
+    previewFileType: "any",
+    showPreview: false,
+    showCancel: false,
+    browseLabel: "Upload certificate",
+    browseClass: "mx-2 btn btn-outline-primary browse-btn border-radius",
+    browseIcon: '<i class="icon icon-upload"></i>',
+    removeClass: "order-2 btn btn-secondary",
+    removeLabel: "",
+    removeIcon: '<i class="icon icon-trash"></i>',
+    mainClass: "mb-3",
+    previewFileIcon: false,
+  });
+}
+// toggle show hide custom upload function
+$(".upload-checkbox").click(function () {
+  if ($(this).prop("checked") == true) {
+    console.log("Checkbox is checked.");
+    $(".custom-file-upload").removeClass("d-none");
+  } else if ($(this).prop("checked") == false) {
+    console.log("Checkbox is unchecked.");
+    $(".custom-file-upload").addClass("d-none");
+  }
+});
+
 /* --- navbar fixed top on scroll fuction--- */
 function stickyheader() {
   var scroll = $(window).scrollTop();
