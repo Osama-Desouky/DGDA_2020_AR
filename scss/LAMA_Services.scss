@@ -1,0 +1,91 @@
+@import "settings";
+.content-title {
+  font-size: rems(40);
+  font-weight: $simiboldW;
+  line-height: rems(47);
+  padding-top: rems(44);
+  padding-bottom: rems(35);
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+}
+.lama-bg {
+  background-image: url("../images/LAMA/Lama-main-bg.png");
+  height: rems(510);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lama-main-p {
+  overflow: hidden;
+  font-size: rems(30);
+  font-weight: $regularW;
+  line-height: rems(35);
+  // max height is 4 lines
+  max-height: rems(35 * 4);
+  margin-top: rems(44);
+  margin-bottom: rems(60);
+}
+#aboutLamaToggle {
+  font-size: rems(18);
+  font-weight: $mediumW;
+  line-height: rems(21);
+  color: $green;
+  padding: rems(10) 0;
+  display: inline-block;
+  * {
+    @include trans(0.3s);
+  }
+
+  i {
+    color: $lightBrown;
+    margin-left: rems(25);
+  }
+  &.expanded {
+    span {
+      display: none;
+    }
+    i {
+      transform: rotateX(180deg);
+    }
+  }
+}
+.lama-map {
+  margin-bottom: rems(32);
+  img {
+    width: 100%;
+  }
+}
+#aboutLama {
+  overflow: hidden;
+  display: none;
+  .lama-about-p {
+    font-size: rems(20);
+    line-height: rems(27);
+    color: $green;
+    margin-bottom: rems(40);
+  }
+}
+.places {
+  background-color: #f8f5f2;
+  padding: rems(36);
+  padding-bottom: rems(25);
+  margin-bottom: rems(32);
+  .place {
+    padding: 0 rems(17);
+    h3 {
+      font-size: rems(28);
+      color: $green;
+      line-height: rems(27);
+      font-weight: $simiboldW;
+      margin-bottom: rems(27);
+    }
+    p {
+      font-size: rems(20);
+      line-height: rems(27);
+      color: $green;
+      font-weight: $regularW;
+    }
+  }
+}

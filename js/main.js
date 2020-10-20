@@ -129,6 +129,10 @@ $(function () {
       },
     });
   }
+  $("#aboutLamaToggle").on("click", function () {
+    $(this).toggleClass("expanded");
+    $("#aboutLama").slideToggle();
+  });
 });
 
 // custom file upload plugin init
