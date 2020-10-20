@@ -88,11 +88,14 @@ $(function () {
     });
   }
   // datepicker calendar
-  $("#datepicker").datepicker({
-    dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
-    showOtherMonths: true,
-    selectOtherMonths: false,
-  });
+  var dPicker = $("#datepicker");
+  if (dPicker.length) {
+    $("#datepicker").datepicker({
+      dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
+      showOtherMonths: true,
+      selectOtherMonths: false,
+    });
+  }
 
   // CSV LocalBusiness swiper
   if ($(".CSV-LocalBusiness .swiper-slide").length >= 1) {
