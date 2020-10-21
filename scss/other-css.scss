@@ -2,8 +2,17 @@
     @import "settings";
     // put new css here
     $lightGold: #DECEBE;
+    .bg-lightGold {
+        background: $lightGold;
+    }
+    
     body.inner {
         min-height: 100vh;
+        h2 {
+            @media (max-width: 480px) {
+                font-size: 1.5rem;
+            }
+        }
         .inner-content {
             .aside {
                 background-color: $lightGold;
@@ -19,11 +28,6 @@
                 }
             }
             .media-content {
-                h2 {
-                    @media (max-width: 480px) {
-                        font-size: 1.5rem;
-                    }
-                }
                 .media-links {
                     .media-item {
                         min-height: 190px;
@@ -180,4 +184,73 @@
                 }
             }
         }
+        .masthead {
+            .masthead-image {
+                padding-top: 10.5rem;
+                padding-bottom: 6rem;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../images/team/team.jpg);
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: center center;
+                background-size: cover;
+                @media (min-width: 768px) {
+                    padding-top: 12rem;
+                    padding-bottom: 9rem;
+                }
+                .masthead-heading {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        #Leaders {
+            a {
+                &.collapsed {
+                    background: transparent!important;
+                }
+                &:hover {
+                    background: white!important;
+                }
+                img {
+                    @media (min-width: 768px) {
+                        min-width: 192px
+                    }
+                }
+                span {
+                    font-size: .875rem;
+                    font-weight: 600;
+                    &.empty-img {
+                        min-width: 192px;
+                        min-height: 192px;
+                        background-color: #bd9d7e20;
+                    }
+                }
+            }
+            .card {
+                p {
+                    font-size: 1.125rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+        .team-swiper {
+            .NewsNavigation {
+                margin-top: 84px;
+            }
+            .team-blockquote:before {
+                content: "“";
+                top: -5.5rem;
+                font-size: 16rem;
+                position: absolute;
+                left: -2.8rem;
+                font-family: sans-serif;
+                color: #bd9d7e;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    .space {
+        height: 70px;
+        width: 100%;
+        display: block;
     }
