@@ -63,3 +63,23 @@
 .q-item .quesion-header a.collapsed .more-icon { background-image: url("../images/LAMA/plus-icon.svg"); }
 
 .q-item .answer p { font-family: "Helvetica Neue"; font-size: 1rem; line-height: 1.5625rem; }
+
+.contact .contact-card { padding: 2.25rem 6.25rem 2.5rem; background-color: #365029; position: relative; top: -7.5rem; }
+
+.contact .contact-card .title { color: #bd9d7e; font-size: 1.5rem; line-height: 1.75rem; text-align: center; font-weight: 600; margin-bottom: 1.25rem; }
+
+.contact .contact-card .main-label { color: #fff; font-size: 3rem; line-height: 3.5625rem; text-align: center; font-weight: 600; margin-bottom: 0.4375rem; }
+
+.contact .contact-card p { color: #bd9d7e; font-size: 1.25rem; line-height: 1.6875rem; text-align: center; font-weight: 400; margin-bottom: 1.6875rem; }
+
+.contact .contact-card .email { color: #fff; font-size: 1.5rem; white-space: nowrap; line-height: 3.5625rem; }
+
+.contact .contact-card .email i { font-size: 2rem; color: #bd9d7e; margin-right: 1.625rem; vertical-align: text-bottom; }
+
+.contact .contact-card .email a { color: inherit; font-weight: 600; font-size: inherit; }
+
+.contact .contact-card .phone { color: #fff; font-size: 3rem; white-space: nowrap; line-height: 3.5625rem; }
+
+.contact .contact-card .phone a { color: inherit; font-weight: 600; font-size: inherit; }
+
+.contact .contact-card .phone img { margin-right: 1rem; }
