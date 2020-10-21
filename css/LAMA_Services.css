@@ -10,6 +10,12 @@
 
 @font-face { font-family: "GE SS Two"; font-style: normal; font-weight: 300; src: url(../fonts/GESSTwoLight-Light.woff); }
 
+@font-face { font-family: "Helvetica Neue"; font-style: normal; font-weight: 300; src: url("../fonts/HelveticaNeue Light.ttf"); }
+
+@font-face { font-family: "Helvetica Neue"; font-style: normal; src: url("../fonts/HelveticaNeue Medium.ttf"); }
+
+@font-face { font-family: "Helvetica Neue"; font-style: normal; font-weight: 700; src: url("../fonts/Helvetica Neu Bold.ttf"); }
+
 .content-title { font-size: 2.5rem; font-weight: 600; line-height: 2.9375rem; padding-top: 2.75rem; padding-bottom: 2.1875rem; }
 
 .fixed-bg { background-attachment: fixed; }
@@ -18,7 +24,7 @@
 
 .lama-main-p { overflow: hidden; font-size: 1.875rem; font-weight: 400; line-height: 2.1875rem; max-height: 8.75rem; margin-top: 2.75rem; margin-bottom: 3.75rem; }
 
-#aboutLamaToggle { font-size: 1.125rem; font-weight: 500; line-height: 1.3125rem; color: #365029; padding: 0.625rem 0; display: inline-block; }
+#aboutLamaToggle { font-size: 1.125rem; font-weight: 500; line-height: 1.3125rem; color: #365029; padding: 0.625rem 0; display: block; }
 
 #aboutLamaToggle * { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
@@ -43,3 +49,17 @@
 .places .place h3 { font-size: 1.75rem; color: #365029; line-height: 1.6875rem; font-weight: 600; margin-bottom: 1.6875rem; }
 
 .places .place p { font-size: 1.25rem; line-height: 1.6875rem; color: #365029; font-weight: 400; }
+
+#FAQ { background-color: #decebe; padding-top: 3.375rem; padding-bottom: 13.75rem; }
+
+#FAQ header { font-size: 2.5rem; line-height: 2.9375rem; color: #365029; font-weight: 600; margin-bottom: 1.125rem; }
+
+.q-item { margin-bottom: 1.625rem; }
+
+.q-item .quesion-header a { font-family: "Helvetica Neue"; font-weight: 700; text-transform: uppercase; font-size: 1.5rem; display: block; position: relative; }
+
+.q-item .quesion-header a .more-icon { width: 2rem; height: 2rem; display: inline-block; background-image: url("../images/LAMA/minus-icon.svg"); background-position: center; background-size: contain; background-repeat: no-repeat; position: absolute; right: 0; top: 0; }
+
+.q-item .quesion-header a.collapsed .more-icon { background-image: url("../images/LAMA/plus-icon.svg"); }
+
+.q-item .answer p { font-family: "Helvetica Neue"; font-size: 1rem; line-height: 1.5625rem; }

@@ -1,4 +1,24 @@
 @import "settings";
+// Fonts
+$Helvetica: "Helvetica Neue";
+@font-face {
+  font-family: $Helvetica;
+  font-style: normal;
+  font-weight: $lightW;
+  src: url("../fonts/HelveticaNeue Light.ttf");
+}
+// default weight
+@font-face {
+  font-family: $Helvetica;
+  font-style: normal;
+  src: url("../fonts/HelveticaNeue Medium.ttf");
+}
+@font-face {
+  font-family: $Helvetica;
+  font-style: normal;
+  font-weight: $boldW;
+  src: url("../fonts/Helvetica Neu Bold.ttf");
+}
 .content-title {
   font-size: rems(40);
   font-weight: $simiboldW;
@@ -33,7 +53,7 @@
   line-height: rems(21);
   color: $green;
   padding: rems(10) 0;
-  display: inline-block;
+  display: block;
   * {
     @include trans(0.3s);
   }
@@ -86,6 +106,56 @@
       line-height: rems(27);
       color: $green;
       font-weight: $regularW;
+    }
+  }
+}
+
+#FAQ {
+  background-color: #decebe;
+  padding-top: rems(54);
+  padding-bottom: rems(220);
+  header {
+    font-size: rems(40);
+    line-height: rems(47);
+    color: $green;
+    font-weight: $simiboldW;
+    margin-bottom: rems(18);
+  }
+}
+.q-item {
+  margin-bottom: rems(26);
+  .quesion-header {
+    a {
+      font-family: $Helvetica;
+      font-weight: $boldW;
+      text-transform: uppercase;
+      font-size: rems(24);
+      display: block;
+      position: relative;
+      .more-icon {
+        width: rems(32);
+        height: rems(32);
+        display: inline-block;
+        background-image: url("../images/LAMA/minus-icon.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      &.collapsed {
+        .more-icon {
+          background-image: url("../images/LAMA/plus-icon.svg");
+        }
+      }
+    }
+  }
+  .answer {
+    p {
+      font-family: $Helvetica;
+      font-size: rems(16);
+      line-height: rems(25);
     }
   }
 }
