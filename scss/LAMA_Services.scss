@@ -508,3 +508,16 @@ section.services {
     }
   }
 }
+section.services {
+  position: relative;
+  .tab-pane.show:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 136px;
+    bottom: 0;
+    left: 0;
+    background-color: #decebe;
+    z-index: -2;
+  }
+}

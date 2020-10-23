@@ -179,3 +179,7 @@ section.services .service-inner-tabContent .tab-pane form .btn-box .download h4 
 .visit-link a { font-size: 1rem; color: #365029; font-weight: 700; }
 
 .visit-link a img { margin-left: 3.125rem; }
+
+section.services { position: relative; }
+
+section.services .tab-pane.show:after { content: ""; position: absolute; width: 100vw; height: 136px; bottom: 0; left: 0; background-color: #decebe; z-index: -2; }
