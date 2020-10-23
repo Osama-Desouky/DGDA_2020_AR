@@ -10,12 +10,6 @@
 
 @font-face { font-family: "GE SS Two"; font-style: normal; font-weight: 300; src: url(../fonts/GESSTwoLight-Light.woff); }
 
-@font-face { font-family: "Helvetica Neue"; font-style: normal; font-weight: 300; src: url("../fonts/HelveticaNeue Light.ttf"); }
-
-@font-face { font-family: "Helvetica Neue"; font-style: normal; src: url("../fonts/HelveticaNeue Medium.ttf"); }
-
-@font-face { font-family: "Helvetica Neue"; font-style: normal; font-weight: 700; src: url("../fonts/Helvetica Neu Bold.ttf"); }
-
 .content-title { font-size: 2.5rem; font-weight: 600; line-height: 2.9375rem; padding-top: 2.75rem; padding-bottom: 2.1875rem; }
 
 .fixed-bg { background-attachment: fixed; }
@@ -56,13 +50,13 @@
 
 .q-item { margin-bottom: 1.625rem; }
 
-.q-item .quesion-header a { font-family: "Helvetica Neue"; font-weight: 700; text-transform: uppercase; font-size: 1.5rem; display: block; position: relative; }
+.q-item .quesion-header a { font-weight: 700; text-transform: uppercase; font-size: 1.5rem; display: block; position: relative; }
 
 .q-item .quesion-header a .more-icon { width: 2rem; height: 2rem; display: inline-block; background-image: url("../images/LAMA/minus-icon.svg"); background-position: center; background-size: contain; background-repeat: no-repeat; position: absolute; right: 0; top: 0; }
 
 .q-item .quesion-header a.collapsed .more-icon { background-image: url("../images/LAMA/plus-icon.svg"); }
 
-.q-item .answer p { font-family: "Helvetica Neue"; font-size: 1rem; line-height: 1.5625rem; }
+.q-item .answer p { font-size: 1rem; line-height: 1.5625rem; }
 
 .contact .contact-card { padding: 2.25rem 6.25rem 2.5rem; background-color: #365029; position: relative; top: -7.5rem; }
 
@@ -100,17 +94,17 @@ section.services #service-tabContent { background-color: #365029; }
 
 section.services #service-tabContent > .tab-pane { background-color: #365029; padding: 2.5rem 2rem; }
 
-section.services #service-tabContent > .tab-pane .s-tab-p { color: #bd9d7e; font-family: "Helvetica Neue"; font-weight: 300; font-size: 1.625rem; line-height: 2rem; margin-bottom: 2.5rem; }
+section.services #service-tabContent > .tab-pane .s-tab-p { color: #bd9d7e; font-weight: 300; font-size: 1.625rem; line-height: 2rem; margin-bottom: 2.5rem; }
 
 section.services .service-inner-tab { margin-bottom: 0.9375rem; }
 
-section.services .service-inner-tab .nav-item .nav-link { font-family: "Helvetica Neue"; font-weight: 700; font-size: 1.375rem; color: #fff; padding-top: 1.5625rem; padding-bottom: 1.375rem; text-align: center; border: 3px solid #bd9d7e; }
+section.services .service-inner-tab .nav-item .nav-link { font-weight: 700; font-size: 1.375rem; color: #fff; padding-top: 1.5625rem; padding-bottom: 1.375rem; text-align: center; border: 3px solid #bd9d7e; }
 
 section.services .service-inner-tab .nav-item .nav-link.active { background-color: #fff; border-color: #fff; color: #365029; }
 
 section.services .service-inner-tabContent { background-color: #fff; }
 
-section.services .service-inner-tabContent .tab-pane { background-color: #fff; font-family: "Helvetica Neue"; padding: 2.5rem 2rem; }
+section.services .service-inner-tabContent .tab-pane { background-color: #fff; padding: 2.5rem 2rem; }
 
 section.services .service-inner-tabContent .tab-pane > h3 { font-size: 1.75rem; font-weight: 500; margin-bottom: 1.4375rem; color: #365029; }
 
@@ -144,9 +138,7 @@ section.services .service-inner-tabContent .tab-pane form .btn-box button:disabl
 
 section.services .service-inner-tabContent .tab-pane form .btn-box .download h4 { margin-top: 0.625rem; }
 
-.custom-select + .select2-container { display: block; font-family: "Helvetica Neue"; }
-
-.custom-select + .select2-container * { font-family: "Helvetica Neue"; }
+.custom-select + .select2-container { display: block; }
 
 .custom-select + .select2-container .select2-selection { border-radius: 0; border: 1px solid #bd9d7e; height: auto; }
 

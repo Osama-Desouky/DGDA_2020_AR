@@ -1,24 +1,4 @@
 @import "settings";
-// Fonts
-$Helvetica: "Helvetica Neue";
-@font-face {
-  font-family: $Helvetica;
-  font-style: normal;
-  font-weight: $lightW;
-  src: url("../fonts/HelveticaNeue Light.ttf");
-}
-// default weight
-@font-face {
-  font-family: $Helvetica;
-  font-style: normal;
-  src: url("../fonts/HelveticaNeue Medium.ttf");
-}
-@font-face {
-  font-family: $Helvetica;
-  font-style: normal;
-  font-weight: $boldW;
-  src: url("../fonts/Helvetica Neu Bold.ttf");
-}
 .content-title {
   font-size: rems(40);
   font-weight: $simiboldW;
@@ -126,7 +106,6 @@ $Helvetica: "Helvetica Neue";
   margin-bottom: rems(26);
   .quesion-header {
     a {
-      font-family: $Helvetica;
       font-weight: $boldW;
       text-transform: uppercase;
       font-size: rems(24);
@@ -153,7 +132,6 @@ $Helvetica: "Helvetica Neue";
   }
   .answer {
     p {
-      font-family: $Helvetica;
       font-size: rems(16);
       line-height: rems(25);
     }
@@ -271,7 +249,6 @@ section.services {
       padding: rems(40) rems(32);
       .s-tab-p {
         color: $lightBrown;
-        font-family: $Helvetica;
         font-weight: $lightW;
         font-size: rems(26);
         line-height: rems(32);
@@ -283,7 +260,6 @@ section.services {
     margin-bottom: rems(15);
     .nav-item {
       .nav-link {
-        font-family: $Helvetica;
         font-weight: $boldW;
         font-size: rems(22);
         color: $white;
@@ -303,7 +279,7 @@ section.services {
     background-color: $white;
     .tab-pane {
       background-color: $white;
-      font-family: $Helvetica;
+
       padding: rems(40) rems(32);
       > h3 {
         font-size: rems(28);
@@ -410,10 +386,6 @@ section.services {
 }
 .custom-select + .select2-container {
   display: block;
-  font-family: $Helvetica;
-  * {
-    font-family: $Helvetica;
-  }
   .select2-selection {
     border-radius: 0;
     border: 1px solid $lightBrown;
