@@ -9,6 +9,10 @@
       href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/select2/dist/css/select2.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/other-css.css" />
     <link rel="stylesheet" href="css/LAMA_Services.css" />
@@ -288,6 +292,406 @@
         <hr style="border-color: #979797" />
       </div>
     </div>
+    <div class="container">
+      <p class="default">
+        As many services are slated to go online throughout the year, we will be
+        regularly updating this page with the new services provided. Currently,
+        you can begin benefitting from the following services below.
+      </p>
+    </div>
+    <!-- service section -->
+    <section class="services">
+      <div class="container">
+        <h2 class="title">LAMA Services</h2>
+        <ul class="nav nav-services row" id="services-tab" role="tablist">
+          <li class="nav-item col-12 col-md-4">
+            <a
+              class="nav-link"
+              id="apply-tab"
+              data-toggle="pill"
+              href="#apply-card"
+              role="tab"
+              aria-controls="apply-card"
+              aria-selected="false"
+            >
+              <div class="box-link">
+                Need to apply <br />
+                for a permit?
+              </div></a
+            >
+          </li>
+          <li class="nav-item col-12 col-md-4">
+            <a
+              class="nav-link"
+              id="modify-tab"
+              data-toggle="pill"
+              href="#modify-card"
+              role="tab"
+              aria-controls="modify-card"
+              aria-selected="false"
+            >
+              <div class="box-link">
+                Need to modify <br />
+                your land?
+              </div>
+            </a>
+          </li>
+          <li class="nav-item col-12 col-md-4">
+            <a
+              class="nav-link"
+              id="submit-tab"
+              data-toggle="pill"
+              href="#submit-card"
+              role="tab"
+              aria-controls="submit-card"
+              aria-selected="false"
+            >
+              <div class="box-link">
+                Need to submit your <br />
+                expropriation documents?
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content" id="service-tabContent">
+          <div
+            class="tab-pane fade"
+            id="apply-card"
+            role="tabpanel"
+            aria-labelledby="apply-tab"
+          >
+            <p class="s-tab-p">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock.
+            </p>
+            <ul
+              class="nav nav-fill service-inner-tab"
+              id="apply-inner-tab"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="inner-tab-1"
+                  data-toggle="pill"
+                  href="#inner-card-1"
+                  role="tab"
+                  aria-controls="inner-card-1"
+                  aria-selected="true"
+                  >Form Based code</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="inner-tab-2"
+                  data-toggle="pill"
+                  href="#inner-card-2"
+                  role="tab"
+                  aria-controls="inner-card-2"
+                  aria-selected="false"
+                  >Information Session</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="inner-tab-3"
+                  data-toggle="pill"
+                  href="#inner-card-3"
+                  role="tab"
+                  aria-controls="inner-card-3"
+                  aria-selected="false"
+                  >Awareness session</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="inner-tab-4"
+                  data-toggle="pill"
+                  href="#inner-card-4"
+                  role="tab"
+                  aria-controls="inner-card-4"
+                  aria-selected="false"
+                  >Design Approval</a
+                >
+              </li>
+            </ul>
+            <div
+              class="tab-content service-inner-tabContent"
+              id="inner-tabContent"
+            >
+              <div
+                class="tab-pane fade show active"
+                id="inner-card-1"
+                role="tabpanel"
+                aria-labelledby="inner-tab-1"
+              >
+                <h3>Read more on the new Form Based Code</h3>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                </p>
+                <div class="row">
+                  <div class="col-12 col-md-5">
+                    <div class="img-box">
+                      <img src="images/LAMA/based-code.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-7">
+                    <div class="content-box">
+                      <div class="download">
+                        To Download form based code document please click here
+                        <h4>
+                          Form based code
+                          <a href="javascript:;">
+                            <img src="images/LAMA/download-icon.svg" alt="" />
+                          </a>
+                        </h4>
+                      </div>
+                      <form>
+                        <p>
+                          Contrary to popular belief, Lorem Ipsum is not simply
+                          random text. It has roots in a piece of classical
+                          Latin literature from 45 BC.
+                        </p>
+                        <div class="select-element">
+                          <select class="custom-select" name="state">
+                            <option value="">Type of property</option>
+                            <option value="Res">Residential</option>
+                            <option value="Com">Commercial</option>
+                            <option value="Mix">Mixed-use</option>
+                          </select>
+                        </div>
+                        <div class="select-element">
+                          <select class="custom-select" name="state">
+                            <option value="">Size of the property</option>
+                            <option value="Lg">Large</option>
+                            <option value="Sm">Small</option>
+                          </select>
+                        </div>
+                        <div class="select-element">
+                          <select class="custom-select" name="state">
+                            <option value="">Type of residence</option>
+                            <option value="T1">Villa</option>
+                            <option value="T2">Duplex</option>
+                            <option value="T3">Townhouse</option>
+                            <option value="T4">Stacked house</option>
+                            <option value="T5">Multi-family</option>
+                          </select>
+                        </div>
+                        <div class="btn-box">
+                          <!-- change type to submit -->
+                          <!-- also can add disabled attr to apply disabled style -->
+                          <button class="btn btn-success" type="button">
+                            Submit
+                            <span class="right-icon"></span>
+                          </button>
+                          <div class="download float-right">
+                            <h4>
+                              Download
+                              <a href="javascript:;">
+                                <img
+                                  src="images/LAMA/download-icon.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </h4>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="inner-card-2"
+                role="tabpanel"
+                aria-labelledby="inner-tab-2"
+              >
+                <h3>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text.
+                </h3>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                </p>
+                <div class="row">
+                  <div class="col-12 col-md-7">
+                    <div class="img-box">
+                      <img src="images/LAMA/info-session.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-5">
+                    <div class="content-box">
+                      <p class="info-session-p">
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC.
+                      </p>
+                      <div class="download">
+                        To Download the document please click here
+                        <h4>
+                          Download service brief
+                          <a href="javascript:;">
+                            <img src="images/LAMA/download-icon.svg" alt="" />
+                          </a>
+                        </h4>
+                      </div>
+                      <a href="javascript:;" class="book-btn">
+                        Book an appointment
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="inner-card-3"
+                role="tabpanel"
+                aria-labelledby="inner-tab-3"
+              >
+                <h3>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text.
+                </h3>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                </p>
+                <div class="row">
+                  <div class="col-12 col-md-7">
+                    <div class="img-box">
+                      <img src="images/LAMA/awareness-session.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-5">
+                    <div class="content-box">
+                      <p class="info-session-p">
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC.
+                      </p>
+                      <div class="download">
+                        To Download the document please click here
+                        <h4>
+                          Download service brief
+                          <a href="javascript:;">
+                            <img src="images/LAMA/download-icon.svg" alt="" />
+                          </a>
+                        </h4>
+                      </div>
+                      <a href="javascript:;" class="book-btn">
+                        Book an appointment
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="inner-card-4"
+                role="tabpanel"
+                aria-labelledby="inner-tab-4"
+              >
+                <h3>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text.
+                </h3>
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                </p>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div class="img-box">
+                      <img src="images/LAMA/design-approval.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="approval-card">
+                      <h5>Contrary to popular belief</h5>
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.
+                      </p>
+                      <div class="download">
+                        To Download the document please click here
+                        <h4>
+                          Download service brief
+                          <a href="javascript:;">
+                            <img src="images/LAMA/download-icon.svg" alt="" />
+                          </a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="approval-card">
+                      <h5>Contrary to popular belief</h5>
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.
+                      </p>
+                      <div class="download">
+                        To Download the document please click here
+                        <h4>
+                          Download service brief
+                          <a href="javascript:;">
+                            <img src="images/LAMA/download-icon.svg" alt="" />
+                          </a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="visit-link">
+                  To benefit from these services,
+                  <a href="javascript:;">
+                    please visit the Lama portal
+                    <img src="images/LAMA/chevron-right.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="modify-card"
+            role="tabpanel"
+            aria-labelledby="modify-tab"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="submit-card"
+            role="tabpanel"
+            aria-labelledby="submit-tab"
+          >
+            ...
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- FAQ Section -->
     <section id="FAQ">
       <div class="container">
@@ -441,6 +845,7 @@
         </div>
       </div>
     </section>
+    <!-- contact -->
     <section class="contact">
       <div class="container">
         <div class="contact-card">
@@ -548,6 +953,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/css-browser-selector/css_browser_selector.min.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -129,10 +129,14 @@ $(function () {
       },
     });
   }
+  // About Lama
   $("#aboutLamaToggle").on("click", function () {
     $(this).toggleClass("expanded");
     $("#aboutLama").slideToggle();
   });
+
+  // select 2
+  $(".custom-select").select2();
 });
 
 // custom file upload plugin init
