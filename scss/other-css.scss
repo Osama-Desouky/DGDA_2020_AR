@@ -247,6 +247,45 @@
                 font-weight: 500;
             }
         }
+        &.contact {
+            .contact-main {
+                .meta-info {
+                    .icon {
+                        &::after {
+                            width: 32px;
+                            height: 32px;
+                        }
+                        &.envelope {
+                            &::after {
+                                height: 24px;
+                            }
+                        }
+                        &.location-icon {
+                            &::after {
+                                height: 44px;
+                            }
+                        }
+                    }
+                }
+            }
+            h4,
+            .h4 {
+                @media (max-width: 480px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    
+    .clock-icon {
+        &::after {
+            content: "";
+            display: inline-block;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg transform='translate(-88 -1806)'%3E%3Cpath d='M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Z' transform='translate(88 1806)' fill='%23bd9d7e'/%3E%3Cpath d='M11.429,10.286a1.143,1.143,0,0,1-1.143,1.143H1.143a1.143,1.143,0,1,1,0-2.286h8v-8a1.143,1.143,0,1,1,2.286,0Z' transform='translate(95 1813)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+        }
     }
     
     .space {
