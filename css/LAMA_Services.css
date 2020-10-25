@@ -10,6 +10,15 @@
 
 @font-face { font-family: "GE SS Two"; font-style: normal; font-weight: 300; src: url(../fonts/GESSTwoLight-Light.woff); }
 
+ul.nav { display: none; }
+
+@media (min-width: 768px) { ul.nav { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .card { border: none; }
+  .card .card-header { display: none; }
+  .card .collapse { display: block; } }
+
+@media (max-width: 767px) { .tab-content > .tab-pane { display: block !important; opacity: 1; } }
+
 .content-title { font-size: 2.5rem; font-weight: 600; line-height: 2.9375rem; padding-top: 2.75rem; padding-bottom: 2.1875rem; }
 
 .fixed-bg { background-attachment: fixed; }
@@ -116,9 +125,9 @@ section.services .service-inner-tabContent .tab-pane .img-box img { min-width: 1
 
 section.services .service-inner-tabContent .tab-pane .content-box .download { color: #365029; font-size: 1rem; line-height: 1.5625rem; }
 
-section.services .service-inner-tabContent .tab-pane .content-box .download h4 { font-size: 1.125rem; font-weight: 700; margin-top: 1.25rem; }
+section.services .service-inner-tabContent .tab-pane .content-box .download h4 a { font-size: 1.125rem; font-weight: 700; margin-top: 1.25rem; }
 
-section.services .service-inner-tabContent .tab-pane .content-box .download h4 a { margin-left: 1.875rem; vertical-align: text-bottom; }
+section.services .service-inner-tabContent .tab-pane .content-box .download h4 a img, section.services .service-inner-tabContent .tab-pane .content-box .download h4 a i { margin-left: 1.875rem; vertical-align: text-bottom; }
 
 section.services .service-inner-tabContent .tab-pane .content-box .info-session-p { font-size: 1rem; line-height: 1.5625rem; color: #365029; margin-top: 10.625rem; margin-bottom: 3.125rem; }
 
@@ -142,7 +151,7 @@ section.services .service-inner-tabContent .tab-pane form .btn-box .download h4 
 
 .custom-select + .select2-container .select2-selection { border-radius: 0; border: 1px solid #bd9d7e; height: auto; }
 
-.custom-select + .select2-container .select2-selection .select2-selection__rendered { padding: 0.8125rem 1.1875rem 0.6875rem; font-size: 1.125rem; font-weight: 700; color: #365029; background-color: rgba(189, 157, 126, 0.15); }
+.custom-select + .select2-container .select2-selection .select2-selection__rendered { padding: 0.6875rem 1.1875rem 0.5625rem; font-size: 1.125rem; font-weight: 700; color: #365029; background-color: #f5f0ec; }
 
 .custom-select + .select2-container .select2-selection .select2-selection__arrow { width: auto; height: auto; top: 1.125rem; right: 1.75rem; }
 
