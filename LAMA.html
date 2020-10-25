@@ -303,32 +303,24 @@
     <section class="services">
       <div class="container">
         <h2 class="title">LAMA Services</h2>
-        <ul class="nav nav-services row" id="services-tab" role="tablist">
-          <li class="nav-item col-12 col-md-4">
-            <a
-              class="nav-link"
-              id="apply-tab"
-              data-toggle="pill"
-              href="#apply-card"
-              role="tab"
-              aria-controls="apply-card"
-              aria-selected="false"
-            >
+        <ul
+          class="nav nav-services nav-fill nav-tabs responsive"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#apply-card" role="tab">
               <div class="box-link">
                 Need to apply <br />
                 for a permit?
               </div></a
             >
           </li>
-          <li class="nav-item col-12 col-md-4">
+          <li class="nav-item">
             <a
               class="nav-link"
-              id="modify-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#modify-card"
               role="tab"
-              aria-controls="modify-card"
-              aria-selected="false"
             >
               <div class="box-link">
                 Need to modify <br />
@@ -336,15 +328,12 @@
               </div>
             </a>
           </li>
-          <li class="nav-item col-12 col-md-4">
+          <li class="nav-item">
             <a
               class="nav-link"
-              id="submit-tab"
-              data-toggle="pill"
+              data-toggle="tab"
               href="#submit-card"
               role="tab"
-              aria-controls="submit-card"
-              aria-selected="false"
             >
               <div class="box-link">
                 Need to submit your <br />
@@ -353,20 +342,15 @@
             </a>
           </li>
         </ul>
-        <div class="tab-content" id="service-tabContent">
-          <div
-            class="tab-pane fade"
-            id="apply-card"
-            role="tabpanel"
-            aria-labelledby="apply-tab"
-          >
+        <div class="tab-content service-tabContent responsive">
+          <div class="tab-pane fade" id="apply-card" role="tabpanel">
             <p class="s-tab-p">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old. Richard McClintock.
             </p>
             <ul
-              class="nav nav-fill service-inner-tab"
+              class="nav nav-fill service-inner-tab responsive"
               id="apply-inner-tab"
               role="tablist"
             >
@@ -374,7 +358,7 @@
                 <a
                   class="nav-link active"
                   id="inner-tab-1"
-                  data-toggle="pill"
+                  data-toggle="tab"
                   href="#inner-card-1"
                   role="tab"
                   aria-controls="inner-card-1"
@@ -386,7 +370,7 @@
                 <a
                   class="nav-link"
                   id="inner-tab-2"
-                  data-toggle="pill"
+                  data-toggle="tab"
                   href="#inner-card-2"
                   role="tab"
                   aria-controls="inner-card-2"
@@ -398,7 +382,7 @@
                 <a
                   class="nav-link"
                   id="inner-tab-3"
-                  data-toggle="pill"
+                  data-toggle="tab"
                   href="#inner-card-3"
                   role="tab"
                   aria-controls="inner-card-3"
@@ -410,7 +394,7 @@
                 <a
                   class="nav-link"
                   id="inner-tab-4"
-                  data-toggle="pill"
+                  data-toggle="tab"
                   href="#inner-card-4"
                   role="tab"
                   aria-controls="inner-card-4"
@@ -673,22 +657,8 @@
               </div>
             </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="modify-card"
-            role="tabpanel"
-            aria-labelledby="modify-tab"
-          >
-            ...
-          </div>
-          <div
-            class="tab-pane fade"
-            id="submit-card"
-            role="tabpanel"
-            aria-labelledby="submit-tab"
-          >
-            ...
-          </div>
+          <div class="tab-pane fade" id="modify-card" role="tabpanel">...</div>
+          <div class="tab-pane fade" id="submit-card" role="tabpanel">...</div>
         </div>
       </div>
     </section>
@@ -958,6 +928,21 @@
     <script src="node_modules/css-browser-selector/css_browser_selector.min.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+    <script src="js/responsive-tabs.js"></script>
+    <script type="text/javascript">
+      $("ul.nav.nav-tabs.responsive  a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+      });
+
+      (function ($) {
+        // Test for making sure event are maintained
+        $(".js-alert-test").click(function () {
+          alert("Button Clicked: Event was maintained");
+        });
+        fakewaffle.responsiveTabs(["xs", "sm"]);
+      })(jQuery);
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

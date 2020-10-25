@@ -10,15 +10,6 @@
 
 @font-face { font-family: "GE SS Two"; font-style: normal; font-weight: 300; src: url(../fonts/GESSTwoLight-Light.woff); }
 
-ul.nav { display: none; }
-
-@media (min-width: 768px) { ul.nav { display: -webkit-box; display: -ms-flexbox; display: flex; }
-  .card { border: none; }
-  .card .card-header { display: none; }
-  .card .collapse { display: block; } }
-
-@media (max-width: 767px) { .tab-content > .tab-pane { display: block !important; opacity: 1; } }
-
 .content-title { font-size: 2.5rem; font-weight: 600; line-height: 2.9375rem; padding-top: 2.75rem; padding-bottom: 2.1875rem; }
 
 .fixed-bg { background-attachment: fixed; }
@@ -99,11 +90,11 @@ section.services .nav-services .nav-item .nav-link.active { background-color: #3
 
 section.services .nav-services .nav-item .nav-link.active .box-link { color: #fff; }
 
-section.services #service-tabContent { background-color: #365029; }
+section.services .service-tabContent, section.services .card.collapse { background-color: #365029; }
 
-section.services #service-tabContent > .tab-pane { background-color: #365029; padding: 2.5rem 2rem; }
+section.services .service-tabContent > .tab-pane, section.services .service-tabContent .card-block, section.services .card.collapse > .tab-pane, section.services .card.collapse .card-block { background-color: #365029; padding: 2.5rem 2rem; }
 
-section.services #service-tabContent > .tab-pane .s-tab-p { color: #bd9d7e; font-weight: 300; font-size: 1.625rem; line-height: 2rem; margin-bottom: 2.5rem; }
+section.services .service-tabContent .s-tab-p, section.services .card.collapse .s-tab-p { color: #bd9d7e; font-weight: 300; font-size: 1.625rem; line-height: 2rem; margin-bottom: 2.5rem; }
 
 section.services .service-inner-tab { margin-bottom: 0.9375rem; }
 
@@ -184,3 +175,12 @@ section.services .service-inner-tabContent .tab-pane form .btn-box .download h4 
 section.services { position: relative; }
 
 section.services .tab-pane.show:after { content: ""; position: absolute; width: 100vw; height: 136px; bottom: 0; left: 0; background-color: #decebe; z-index: -2; }
+
+.nav-item .collapse { background-color: #365029; }
+
+.card-block.active { display: block !important; opacity: 1 !important; }
+
+@media (min-width: 992px) { .cards-group.responsive { display: none; }
+  .nav-tabs.responsive { display: -webkit-box; display: -ms-flexbox; display: flex; } }
+
+@media (max-width: 991.99px) { .nav-tabs.responsive { display: none; } }

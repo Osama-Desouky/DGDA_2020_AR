@@ -127,32 +127,3 @@ $border-radius: 0 !default;
 $border-radius-lg: 0 !default;
 $border-radius-sm: 0 !default;
 // $spacer: 1rem;
-
-ul.nav {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  ul.nav {
-    display: flex;
-  }
-
-  .card {
-    border: none;
-  }
-
-  .card .card-header {
-    display: none;
-  }
-
-  .card .collapse {
-    display: block;
-  }
-}
-
-@media (max-width: 767px) {
-  .tab-content > .tab-pane {
-    display: block !important;
-    opacity: 1;
-  }
-}
