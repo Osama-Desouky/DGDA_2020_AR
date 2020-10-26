@@ -222,6 +222,7 @@ section.services {
         display: block;
         padding: 0;
         padding-bottom: rems(19);
+
         .box-link {
           border: 3px solid $green;
           color: $green;
@@ -242,18 +243,20 @@ section.services {
       }
     }
   }
-  #service-tabContent {
+  .service-tabContent,
+  .card.collapse {
     background-color: $green;
-    > .tab-pane {
+    > .tab-pane,
+    .card-block {
       background-color: $green;
       padding: rems(40) rems(32);
-      .s-tab-p {
-        color: $lightBrown;
-        font-weight: $lightW;
-        font-size: rems(26);
-        line-height: rems(32);
-        margin-bottom: rems(40);
-      }
+    }
+    .s-tab-p {
+      color: $lightBrown;
+      font-weight: $lightW;
+      font-size: rems(26);
+      line-height: rems(32);
+      margin-bottom: rems(40);
     }
   }
   .service-inner-tab {
@@ -275,6 +278,7 @@ section.services {
       }
     }
   }
+  // comment in commit
   .service-inner-tabContent {
     background-color: $white;
     .tab-pane {
@@ -309,12 +313,16 @@ section.services {
           font-size: rems(16);
           line-height: rems(25);
           h4 {
-            font-size: rems(18);
-            font-weight: $boldW;
-            margin-top: rems(20);
             a {
-              margin-left: rems(30);
-              vertical-align: text-bottom;
+              font-size: rems(18);
+              font-weight: $boldW;
+              margin-top: rems(20);
+
+              img,
+              i {
+                margin-left: rems(30);
+                vertical-align: text-bottom;
+              }
             }
           }
         }
@@ -392,11 +400,11 @@ section.services {
     height: auto;
 
     .select2-selection__rendered {
-      padding: rems(13) rems(19) rems(11);
+      padding: rems(11) rems(19) rems(9);
       font-size: rems(18);
       font-weight: $boldW;
       color: $green;
-      background-color: rgba($color: #bd9d7e, $alpha: 0.15);
+      background-color: #f5f0ec;
     }
     .select2-selection__arrow {
       width: auto;
@@ -491,5 +499,28 @@ section.services {
     left: 0;
     background-color: #decebe;
     z-index: -2;
+  }
+}
+.nav-item {
+  .collapse {
+    background-color: #365029;
+  }
+}
+.card-block.active {
+  display: block !important;
+  opacity: 1 !important;
+}
+// custom media on accordion
+@media (min-width: 992px) {
+  .cards-group.responsive {
+    display: none;
+  }
+  .nav-tabs.responsive {
+    display: flex;
+  }
+}
+@media (max-width: 991.99px) {
+  .nav-tabs.responsive {
+    display: none;
   }
 }
