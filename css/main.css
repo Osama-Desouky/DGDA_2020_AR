@@ -12,6 +12,12 @@
 
 @font-face { font-family: "GE SS Two"; font-style: normal; font-weight: 300; src: url(../fonts/GESSTwoLight-Light.woff); }
 
+.border-1 { border-width: 1px !important; }
+
+.border-2 { border-width: 2px !important; }
+
+.border-3 { border-width: 3px !important; }
+
 /* Bootstrap Custom Classes
 -------------------------------------------------- */
 /*! Bootstrap v4.5.2 (https://getbootstrap.com/) Copyright 2011-2020 The Bootstrap Authors Copyright 2011-2020 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
