@@ -303,10 +303,7 @@
     <section class="services">
       <div class="container">
         <h2 class="title">LAMA Services</h2>
-        <ul
-          class="nav nav-services nav-fill nav-tabs responsive"
-          role="tablist"
-        >
+        <ul class="nav nav-services nav-fill" role="tablist">
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#apply-card" role="tab">
               <div class="box-link">
@@ -342,7 +339,7 @@
             </a>
           </li>
         </ul>
-        <div class="tab-content service-tabContent responsive">
+        <div class="tab-content service-tabContent">
           <div class="tab-pane fade" id="apply-card" role="tabpanel">
             <p class="s-tab-p">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -350,7 +347,7 @@
               making it over 2000 years old. Richard McClintock.
             </p>
             <ul
-              class="nav nav-fill service-inner-tab responsive"
+              class="nav nav-fill service-inner-tab"
               id="apply-inner-tab"
               role="tablist"
             >
@@ -928,21 +925,7 @@
     <script src="node_modules/css-browser-selector/css_browser_selector.min.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
-    <script src="js/responsive-tabs.js"></script>
-    <script type="text/javascript">
-      $("ul.nav.nav-tabs.responsive  a").click(function (e) {
-        e.preventDefault();
-        $(this).tab("show");
-      });
 
-      (function ($) {
-        // Test for making sure event are maintained
-        $(".js-alert-test").click(function () {
-          alert("Button Clicked: Event was maintained");
-        });
-        fakewaffle.responsiveTabs(["xs", "sm"]);
-      })(jQuery);
-    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

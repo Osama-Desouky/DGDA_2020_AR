@@ -217,7 +217,10 @@ section.services {
     margin-bottom: rems(28);
   }
   .nav-services {
+    justify-content: space-between;
     .nav-item {
+      width: calc(33.33% - 16px);
+      max-width: calc(33.33% - 16px);
       .nav-link {
         display: block;
         padding: 0;
@@ -243,13 +246,12 @@ section.services {
       }
     }
   }
-  .service-tabContent,
-  .card.collapse {
+  .service-tabContent {
     background-color: $green;
-    > .tab-pane,
-    .card-block {
+    > .tab-pane {
       background-color: $green;
       padding: rems(40) rems(32);
+      min-height: rems(600);
     }
     .s-tab-p {
       color: $lightBrown;
@@ -522,5 +524,11 @@ section.services {
 @media (max-width: 991.99px) {
   .nav-tabs.responsive {
     display: none;
+  }
+  section.services .nav-services {
+    .nav-item {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
