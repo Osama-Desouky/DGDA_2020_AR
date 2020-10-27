@@ -1407,6 +1407,16 @@ section.CSV-LocalBusiness {
   h4 {
     font-weight: $simiboldW;
   }
+  p {
+    color: $lightBrown;
+    font-size: rems(20);
+    line-height: rems(27);
+    text-align: center;
+    font-weight: $regularW;
+    margin: auto;
+    margin-bottom: 1.6875rem;
+    max-width: rems(800);
+  }
   @media (max-width: 490px) {
     h1 {
       font-size: 2rem;

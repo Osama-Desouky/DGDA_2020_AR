@@ -4445,6 +4445,8 @@ section.CSV-LocalBusiness .NewsNavigation .swiper-button-prev { left: 0 !importa
 
 .contact-box h1, .contact-box h4 { font-weight: 600; }
 
+.contact-box p { color: #bd9d7e; font-size: 1.25rem; line-height: 1.6875rem; text-align: center; font-weight: 400; margin: auto; margin-bottom: 1.6875rem; max-width: 50rem; }
+
 @media (max-width: 490px) { .contact-box h1 { font-size: 2rem; }
   .contact-box h4 { font-size: 1.25rem; }
   .contact-box .contactinfo .phone-icon:after { width: 32px !important; height: 32px !important; position: relative; top: 5px; }
