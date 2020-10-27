@@ -20,7 +20,7 @@
 
 .fixed-bg { background-attachment: fixed; }
 
-.lama-bg { background-image: url("../images/LAMA/Lama-main-bg.png"); height: 31.875rem; background-repeat: no-repeat; background-size: cover; }
+.lama-bg { height: 31.875rem; background-repeat: no-repeat; background-size: cover; background-position: center; }
 
 .lama-main-p { overflow: hidden; font-size: 1.875rem; font-weight: 400; line-height: 2.1875rem; max-height: 8.75rem; margin-top: 2.75rem; margin-bottom: 3.75rem; }
 

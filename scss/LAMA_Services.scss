@@ -11,10 +11,11 @@
   background-attachment: fixed;
 }
 .lama-bg {
-  background-image: url("../images/LAMA/Lama-main-bg.png");
+  // background-image: url("../images/LAMA/Lama-main-bg.png");
   height: rems(510);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .lama-main-p {
