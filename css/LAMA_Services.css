@@ -118,7 +118,7 @@ section.services .service-inner-tabContent .tab-pane { background-color: #fff; p
 
 section.services .service-inner-tabContent .tab-pane > h3 { font-size: 1.75rem; font-weight: 500; margin-bottom: 1.4375rem; color: #365029; }
 
-section.services .service-inner-tabContent .tab-pane > p { font-size: 1rem; font-weight: 300; line-height: 1.5625rem; margin-bottom: 1.5625rem; color: #365029; }
+section.services .service-inner-tabContent .tab-pane > p { font-size: 1rem; font-weight: 400; line-height: 1.5625rem; margin-bottom: 1.5625rem; color: #365029; }
 
 section.services .service-inner-tabContent .tab-pane .img-box { overflow: hidden; border-radius: 0.5rem; height: 100%; }
 
