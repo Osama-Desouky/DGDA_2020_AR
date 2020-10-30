@@ -17,13 +17,13 @@
 
 .border-3 { border-width: 3px !important; }
 
-.bg-lightGold { background: #decebe; }
+.bg-lightGold { background: #DECEBE; }
 
 body.inner { min-height: 100vh; }
 
 @media (max-width: 480px) { body.inner h2 { font-size: 1.5rem; } }
 
-body.inner .inner-content .aside { background-color: #decebe; }
+body.inner .inner-content .aside { background-color: #DECEBE; }
 
 body.inner .inner-content .aside li { border-bottom: 1px #bd9d7e solid; }
 
@@ -31,11 +31,11 @@ body.inner .inner-content .aside li.active { background: #365029; }
 
 body.inner .inner-content .aside li.active a { color: white; font-weight: bold; }
 
-body.inner .inner-content .media-content .media-links .media-item { min-height: 190px; position: relative; overflow: hidden; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+body.inner .inner-content .media-content .media-links .media-item { min-height: 190px; position: relative; overflow: hidden; -o-transition: all .2s ease-in; -webkit-transition: all .2s ease-in; transition: all .2s ease-in; }
 
 body.inner .inner-content .media-content .media-links .media-item .arrow { position: relative; left: 0; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-body.inner .inner-content .media-content .media-links .media-item:after { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; content: ""; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); width: 48px; height: 24px; position: absolute; background-size: contain; right: 0; background-repeat: no-repeat; -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); margin-right: 0.5rem; }
+body.inner .inner-content .media-content .media-links .media-item:after { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; content: ""; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); width: 48px; height: 24px; position: absolute; background-size: contain; right: 0; background-repeat: no-repeat; -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); margin-right: .5rem; }
 
 body.inner .inner-content .media-content .media-links .media-item:hover { background: whitesmoke; }
 
@@ -45,7 +45,7 @@ body.inner .inner-content .media-content .breadcrumb .breadcrumb-item { font-wei
 
 body.inner .inner-content .media-content .breadcrumb .breadcrumb-item a { color: #bd9d7e; }
 
-body.inner .inner-content .media-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before { content: ""; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); width: 24px; height: 12px; position: relative; top: 5px; background-repeat: no-repeat; -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); margin-right: 0.5rem; }
+body.inner .inner-content .media-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before { content: ""; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); width: 24px; height: 12px; position: relative; top: 5px; background-repeat: no-repeat; -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); margin-right: .5rem; }
 
 body.inner .inner-content .media-content .readMore { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
@@ -57,7 +57,7 @@ body.inner .inner-content .media-content .readMore:hover i:after { -webkit-trans
 
 body.inner .inner-content .media-content .tabs .nav .nav-link { min-height: 48px; color: white; }
 
-body.inner .inner-content .media-content .tabs .nav .nav-link:not(.active) { background-color: #decebe; }
+body.inner .inner-content .media-content .tabs .nav .nav-link:not(.active) { background-color: #DECEBE; }
 
 body.inner .inner-content .media-content .news .article-item .avatar { width: 86px; height: 86px; }
 
@@ -87,7 +87,7 @@ body.inner #Leaders a:hover { background: white !important; }
 
 @media (min-width: 768px) { body.inner #Leaders a img { min-width: 192px; } }
 
-body.inner #Leaders a span { font-size: 0.875rem; font-weight: 600; }
+body.inner #Leaders a span { font-size: .875rem; font-weight: 600; }
 
 body.inner #Leaders a span.empty-img { min-height: 192px; background-color: #bd9d7e20; }
 
@@ -105,7 +105,7 @@ body.inner.contact .contact-main .meta-info .icon.location-icon::after { height:
 
 @media (max-width: 480px) { body.inner.contact h4, body.inner.contact .h4 { font-size: 1.2rem; } }
 
-body.inner.about .about-main { background-image: url("../images/about/bg.jpg"); background-size: cover; background-repeat: no-repeat; min-height: 600px; background-position: center; }
+body.inner.about .about-main { background-image: url("../images/about/bg.jpg"); background-size: cover; background-repeat: no-repeat; min-height: 600px; }
 
 body.inner .Activities .activity-item { min-height: 430px; }
 
