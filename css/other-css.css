@@ -81,7 +81,7 @@ body.inner #Leaders a:hover { background: white !important; }
 
 body.inner #Leaders a span { font-size: .875rem; font-weight: 600; }
 
-body.inner #Leaders a span.empty-img { min-width: 192px; min-height: 192px; background-color: #bd9d7e20; }
+body.inner #Leaders a span.empty-img { min-height: 192px; background-color: #bd9d7e20; }
 
 body.inner #Leaders .card p { font-size: 1.125rem; line-height: 1.5rem; }
 
