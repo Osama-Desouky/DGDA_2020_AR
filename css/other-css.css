@@ -107,6 +107,8 @@ body.inner.contact .contact-main .meta-info .icon.location-icon::after { height:
 
 body.inner.about .about-main { background-image: url("../images/about/bg.jpg"); background-size: cover; background-repeat: no-repeat; min-height: 600px; }
 
+body.inner.about .Promise { background-image: url("../images/about/bg.jpg"); background-size: cover; background-repeat: no-repeat; min-height: 342px; background-position: center; }
+
 body.inner .Activities .activity-item { min-height: 430px; }
 
 body.inner .Activities .activity-item .activity-text { z-index: 1; }
