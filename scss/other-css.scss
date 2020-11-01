@@ -255,6 +255,9 @@ body.inner {
             font-family: sans-serif;
             color: #bd9d7e;
             font-weight: 500;
+            @media (max-width: 1024px) {
+                left: 5px;
+            }
         }
     }
     &.contact {
