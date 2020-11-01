@@ -111,11 +111,9 @@ body.inner.about .Promise { background-image: url("../images/about/bg.jpg"); bac
 
 body.inner .Activities .activity-item { min-height: 430px; }
 
-body.inner .Activities .activity-item .activity-text { z-index: 1; }
-
 body.inner .Activities .activity-item .activity-text p { font-size: 1.125rem; }
 
-body.inner .Activities .activity-item:before { content: ""; position: absolute; background-color: #00000020; left: 0; right: 0; top: 0; bottom: 0; z-index: 0; }
+body.inner .DGDA-programs .report-item { height: 235px; }
 
 body.inner .rounded { border-radius: 0.25rem !important; }
 
@@ -132,3 +130,7 @@ body.inner .custom-radio .custom-control-input ~ .custom-control-label::after { 
 body.inner .custom-radio .custom-control-input:checked ~ .custom-control-label:before { opacity: 1; }
 
 body.inner .custom-radio .custom-control-input:checked ~ .custom-control-label::after { opacity: 1; }
+
+body.inner .overlay:before { content: ""; position: absolute; background-color: #00000020; left: 0; right: 0; top: 0; bottom: 0; z-index: 0; }
+
+body.inner .overlay .overlay-text { z-index: 1; }
