@@ -87,12 +87,6 @@ $(function () {
       },
     });
   }
-  // datepicker calendar
-  $("#datepicker").datepicker({
-    dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
-    showOtherMonths: true,
-    selectOtherMonths: false,
-  });
 
   // datepicker calendar
   var dPicker = $("#datepicker");
