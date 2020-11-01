@@ -88,6 +88,13 @@ $(function () {
     });
   }
   // datepicker calendar
+  $("#datepicker").datepicker({
+    dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
+    showOtherMonths: true,
+    selectOtherMonths: false,
+  });
+
+  // datepicker calendar
   var dPicker = $("#datepicker");
   if (dPicker.length) {
     $("#datepicker").datepicker({
@@ -165,6 +172,28 @@ $(".upload-checkbox").click(function () {
     console.log("Checkbox is unchecked.");
     $(".custom-file-upload").addClass("d-none");
   }
+});
+// Business custom file upload
+if ($(".file-loading").length) {
+  $(".business-upload").fileinput({
+    showUpload: false,
+    previewFileType: "any",
+    showPreview: false,
+    showCancel: false,
+    browseLabel: "Upload",
+    browseClass: "mx-2 btn btn-outline-primary browse-btn border-radius",
+    browseIcon: '<i class="icon icon-upload"></i>',
+    removeClass: "order-2 btn btn-secondary",
+    removeLabel: "",
+    removeIcon: '<i class="icon icon-trash"></i>',
+    mainClass: "mb-3",
+    previewFileIcon: false,
+  });
+}
+// Business upload tabs
+$('input[name="intervaltype"]').click(function () {
+  $(this).tab("show");
+  $(this).removeClass("active");
 });
 
 /* --- navbar fixed top on scroll fuction--- */
