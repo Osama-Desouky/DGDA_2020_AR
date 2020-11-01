@@ -97,6 +97,8 @@ body.inner .team-swiper .NewsNavigation { margin-top: 84px; }
 
 body.inner .team-swiper .team-blockquote:before { content: "“"; top: -5.5rem; font-size: 16rem; position: absolute; left: -2.8rem; font-family: sans-serif; color: #bd9d7e; font-weight: 500; }
 
+@media (max-width: 1024px) { body.inner .team-swiper .team-blockquote:before { left: 5px; } }
+
 body.inner.contact .contact-main .meta-info .icon::after { width: 32px; height: 32px; }
 
 body.inner.contact .contact-main .meta-info .icon.envelope::after { height: 24px; }
