@@ -4,6 +4,22 @@ $(function () {
     easing: "linear",
     once: true,
   });
+  /* --- HighContrast Function --- */
+  $("#HightContrastsettings").on("click", function () {
+    if($('body').hasClass('highcontrast')){
+      $('body').removeClass('highcontrast');
+    }else{
+      $('body').addClass('highcontrast');
+    }
+  });
+
+  /* --- Font sizing Function --- */
+  $('#fontIncrease').click(function(){
+    modifyFontSize('html','increase');
+  });
+  $('#fontDecrease').click(function(){
+    modifyFontSize('html','decrease')
+  });
 
   /* --- navbar fixed top on scroll --- */
   stickyheader();
@@ -137,7 +153,9 @@ $(function () {
   });
 
   // select 2
-  $(".custom-select").select2();
+  if ($('.custom-select').length){
+    $(".custom-select").select2();
+  }
 });
 
 // custom file upload plugin init
@@ -196,8 +214,10 @@ function stickyheader() {
   // console.log(scroll);
   if (scroll > 110) {
     $(".header").addClass("scrolled");
-  } else if (scroll <= 70) {
+    $(".topactions-bar").css("margin-bottom","140px");
+  } else{
     $(".header").removeClass("scrolled");
+    $(".topactions-bar").css("margin-bottom","0");
   }
 }
 /* --- opens navbar dropdown on mouse hover --- */
@@ -217,3 +237,22 @@ function toggleDropdown(e) {
 $("body")
   .on("mouseenter mouseleave", ".dropdown", toggleDropdown)
   .on("click", ".dropdown-menu a", toggleDropdown);
+
+  /*----Font sizing Function ---*/
+  function modifyFontSize(MyElement,flag){
+
+    var HtmlElement = $(MyElement);
+    var currentFontSize = parseInt (HtmlElement.css('font-size'));
+    
+    if (flag =='increase' & currentFontSize < 19 )
+        currentFontSize += 1;
+    else if (flag == 'decrease' & currentFontSize >= 16 )
+        currentFontSize -= 1;
+    else if (flag == 'reset')
+    currentFontSize = 16;
+
+    HtmlElement.css('font-size', currentFontSize);
+
+    // console.log(currentFontSize);
+
+  }
