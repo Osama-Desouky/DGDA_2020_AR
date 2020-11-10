@@ -8,7 +8,7 @@ $white: #fff;
 $warning: #e74646;
 
 $font-en: "Work Sans", sans-serif;
-$font-ar: "GE SS Two", sans-serif;
+$font-ar: "NeoSansArabic", sans-serif;
 $lightW: 300;
 $regularW: 400;
 $mediumW: 500;
@@ -68,6 +68,29 @@ $boldW: 700;
   src: url(../fonts/GESSTwoLight-Light.woff);
 }
 
+@font-face {
+  font-family: "NeoSansArabic";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/NeoSansArabic-Light.ttf);
+}
+
+@font-face {
+  font-family: "NeoSansArabic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/NeoSansArabic.ttf);
+}
+
+@font-face {
+  font-family: "NeoSansArabic";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/NeoSansArabic-Bold.ttf);
+}
 // mixins
 
 @mixin trans($duration) {

@@ -10,6 +10,12 @@
 
 @font-face { font-family: "GE SS Two"; font-style: normal; font-weight: 300; src: url(../fonts/GESSTwoLight-Light.woff); }
 
+@font-face { font-family: "NeoSansArabic"; font-style: normal; font-weight: 300; font-display: swap; src: url(../fonts/NeoSansArabic-Light.ttf); }
+
+@font-face { font-family: "NeoSansArabic"; font-style: normal; font-weight: 400; font-display: swap; src: url(../fonts/NeoSansArabic.ttf); }
+
+@font-face { font-family: "NeoSansArabic"; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/NeoSansArabic-Bold.ttf); }
+
 .border-1 { border-width: 1px !important; }
 
 .border-2 { border-width: 2px !important; }

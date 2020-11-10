@@ -11,6 +11,12 @@
 
 @font-face { font-family: "GE SS Two"; font-style: normal; font-weight: 300; src: url(../fonts/GESSTwoLight-Light.woff); }
 
+@font-face { font-family: "NeoSansArabic"; font-style: normal; font-weight: 300; font-display: swap; src: url(../fonts/NeoSansArabic-Light.ttf); }
+
+@font-face { font-family: "NeoSansArabic"; font-style: normal; font-weight: 400; font-display: swap; src: url(../fonts/NeoSansArabic.ttf); }
+
+@font-face { font-family: "NeoSansArabic"; font-style: normal; font-weight: 600; font-display: swap; src: url(../fonts/NeoSansArabic-Bold.ttf); }
+
 .border-1 { border-width: 1px !important; }
 
 .border-2 { border-width: 2px !important; }
@@ -45,7 +51,7 @@ body.inner .inner-content .media-content .breadcrumb .breadcrumb-item { font-wei
 
 body.inner .inner-content .media-content .breadcrumb .breadcrumb-item a { color: #bd9d7e; }
 
-body.inner .inner-content .media-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before { content: ""; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); width: 24px; height: 12px; position: relative; top: 5px; background-repeat: no-repeat; -ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); margin-right: 0.5rem; }
+body.inner .inner-content .media-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before { content: ""; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A"); width: 24px; height: 12px; position: relative; top: 5px; background-repeat: no-repeat; -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); margin-right: 0.5rem; }
 
 body.inner .inner-content .media-content .readMore { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 

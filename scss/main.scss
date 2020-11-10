@@ -1,4 +1,6 @@
 @import "bootstrap-mod";
+@import "direction-rtl";
+@import "rtl";
 html {
   font-size: 16px;
 }
@@ -25,7 +27,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: $font-en;
+  font-family: $font-ar;
   font-weight: $regularW;
   @media (min-width: 1100px) {
     overflow-x: hidden;
@@ -136,7 +138,7 @@ a:hover {
     font-size: 1.2rem;
     margin-left: 0.5rem;
     @media (min-width: 375px) {
-      margin-left: 1rem;
+      margin-right: 1rem;
     }
     padding: 0.7rem;
     font-family: $font-ar;
@@ -262,7 +264,8 @@ a:hover {
         height: 12px;
         position: relative;
         top: 5px;
-        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
         background-size: contain;
@@ -272,7 +275,9 @@ a:hover {
       .dropdown-toggle {
         &:after {
           position: absolute;
-          right: 0;
+          left: 0;
+          margin-right: 0;
+          margin-left: 0.5rem;
         }
       }
       li.dropdown {
@@ -280,7 +285,7 @@ a:hover {
           .dropdown-toggle {
             &:after {
               position: absolute;
-              right: 0;
+              left: 0;
               transform: rotate(-180deg);
             }
           }
@@ -394,7 +399,7 @@ footer,
       font-size: 1.5rem;
     }
     .form-control {
-      margin-right: 2%;
+      margin-left: 2%;
       width: 68%;
       @media (min-width: 1100px) {
         max-width: 360px;
@@ -412,11 +417,11 @@ footer,
   }
   .footerLogo {
     a {
-      margin: 0 0 auto auto;
+      margin: auto auto 0 0;
       @media (max-width: 1100px) {
         margin-left: 0;
         margin-right: auto;
-        justify-content: start !important;
+        justify-content: flex-end !important;
       }
     }
     img {
@@ -433,7 +438,7 @@ footer,
       text-transform: capitalize;
     }
     a {
-      margin-left: 1.3rem;
+      margin-right: 1.3rem;
 
       i.fab {
         font-size: 2rem;
@@ -769,7 +774,7 @@ h1 {
   font-weight: $simiboldW;
 }
 h2 {
-  font-size: rems(40);
+  font-size: rems(35);
   font-weight: $simiboldW;
   text-transform: capitalize;
 }
@@ -1488,6 +1493,7 @@ section.CSV-LocalBusiness {
 .back-link {
   width: rems(48);
   height: rems(48);
+  transform: rotate(180deg);
 
   &:after {
     width: 100%;
@@ -1614,8 +1620,10 @@ section.CSV-LocalBusiness {
   }
 }
 
+// m.mosa EDIT fooooooooooooooooooooooooooooooooooor Arabic
+
 /*--- highcontrast --*/
-.highcontrast{
+.highcontrast {
   filter: grayscale(1) contrast(1.3);
 }
 @import "mediaQuery";
