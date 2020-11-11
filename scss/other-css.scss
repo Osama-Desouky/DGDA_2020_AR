@@ -8,6 +8,8 @@ $lightGold: #decebe;
 
 body.inner {
   min-height: 100vh;
+  direction: rtl;
+  text-align: right;
   h2 {
     @media (max-width: 480px) {
       font-size: 1.5rem;

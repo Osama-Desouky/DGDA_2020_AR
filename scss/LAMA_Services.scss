@@ -41,7 +41,7 @@
 
   i {
     color: $lightBrown;
-    margin-left: rems(25);
+    margin-right: rems(25);
   }
   &.expanded {
     span {
@@ -121,7 +121,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
       }
       &.collapsed {
@@ -323,7 +323,7 @@ section.services {
 
               img,
               i {
-                margin-left: rems(30);
+                margin-right: rems(30);
                 vertical-align: text-bottom;
               }
             }
@@ -374,8 +374,9 @@ section.services {
               background-position: center;
               background-repeat: no-repeat;
               background-size: contain;
-              margin-left: rems(16);
+              margin-right: rems(16);
               vertical-align: middle;
+              transform: rotate(180deg);
             }
             &:disabled {
               color: #cfcfcf;
@@ -386,6 +387,7 @@ section.services {
             }
           }
           .download {
+            float: left !important;
             h4 {
               margin-top: rems(10);
             }
@@ -413,7 +415,8 @@ section.services {
       width: auto;
       height: auto;
       top: rems(18);
-      right: rems(28);
+      left: rems(28);
+      right: auto;
       b {
         border: none;
         background-image: url("../images/LAMA/chevron-arrow.svg");
@@ -487,7 +490,8 @@ section.services {
     color: $green;
     font-weight: $boldW;
     img {
-      margin-left: rems(50);
+      margin-right: rems(50);
+      transform: rotate(180deg);
     }
   }
 }

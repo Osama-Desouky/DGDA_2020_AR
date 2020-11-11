@@ -25,7 +25,7 @@
 
 .bg-lightGold { background: #decebe; }
 
-body.inner { min-height: 100vh; }
+body.inner { min-height: 100vh; direction: rtl; text-align: right; }
 
 @media (max-width: 480px) { body.inner h2 { font-size: 1.5rem; } }
 

@@ -29,6 +29,8 @@ html {
 body {
   font-family: $font-ar;
   font-weight: $regularW;
+  direction: rtl;
+  text-align: right;
   @media (min-width: 1100px) {
     overflow-x: hidden;
   }
@@ -213,8 +215,8 @@ a:hover {
     li.dropdown {
       position: static;
       .dropdown-menu {
-        right: 0;
-        left: auto;
+        left: 0;
+        right: auto;
         top: 100%;
         background: lighten($green, 2.2%);
         border-radius: 0;
@@ -248,7 +250,7 @@ a:hover {
             width: 100%;
             height: 100%;
             position: absolute;
-            right: -90%;
+            left: -90%;
             top: 0;
             background-color: inherit;
             z-index: -1;
@@ -349,7 +351,8 @@ a:hover {
 a.btn {
   line-height: 44px;
   &-primary.btnWizArrow {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23BD9D7E'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M10.2,20.4c-0.3,0-0.5-0.1-0.7-0.3l-9-9c-0.4-0.4-0.4-1,0-1.4l9-9c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-8.3,8.3l8.3,8.3c0.4,0.4,0.4,1,0,1.4C10.7,20.3,10.5,20.4,10.2,20.4z' fill='%23BD9D7E'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-position: 16% center;
   }
 }
 .btn-secondary,
@@ -703,8 +706,9 @@ footer,
         no-repeat center;
       display: inline-block;
       position: relative;
-      margin-left: 1rem;
+      margin-right: 1rem;
       transition: inherit;
+      transform: rotate(-180deg);
     }
   }
 
@@ -712,19 +716,21 @@ footer,
     color: $lightBrown;
     i.chevron-right {
       &:after {
-        transform: translateX(5px);
+        // transform: translateX(5px);
+        transform: translateX(-5px) rotate(-180deg);
       }
     }
   }
 }
 .btnWizArrow {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M9.945,8.9,1.407.245a.817.817,0,0,0-1.165,0,.84.84,0,0,0,0,1.178l8.538,8.655a.841.841,0,0,1,0,1.179L.241,19.911a.84.84,0,0,0,0,1.178.817.817,0,0,0,1.165,0l8.537-8.654A2.523,2.523,0,0,0,9.945,8.9Z' fill='%23365029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.667' height='21.333' viewBox='0 0 10.667 21.333'%3E%3Cg id='Group_7' data-name='Group 7' transform='translate(-0.667 -0.333)'%3E%3Cg id='chevron' transform='translate(0.667 0.333)'%3E%3Cpath id='Path' d='M10.2,20.4c-0.3,0-0.5-0.1-0.7-0.3l-9-9c-0.4-0.4-0.4-1,0-1.4l9-9c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-8.3,8.3l8.3,8.3c0.4,0.4,0.4,1,0,1.4C10.7,20.3,10.5,20.4,10.2,20.4z' fill='%23365029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
-  background-position: 83% center;
-  padding-right: 3.5rem;
+  background-position: 16% center;
+  padding-left: 3.5rem;
   @include trans(0.3s);
   &:hover {
-    background-position: 87% center;
+    // background-position: 87% center;
+    background-position: 12% center !important;
   }
 }
 .py-70 {
@@ -903,14 +909,20 @@ section.HomeEvents {
       }
     }
     .swiper-button-next {
-      right: 0;
+      // right: 0;
+      left: rems(62);
+      right: auto;
     }
     .swiper-button-prev {
-      right: rems(62);
-      left: auto;
+      left: 0;
+      right: auto;
       &:after {
         transform: rotate(180deg);
       }
+    }
+    .swiper-pagination {
+      transform: rotate(180deg);
+      padding-left: 6px;
     }
   }
 
@@ -921,7 +933,7 @@ section.HomeEvents {
     }
     &--text {
       @media (min-width: 1200px) {
-        margin-right: 1rem;
+        margin-left: 1rem;
       }
       h3 {
         font-size: rems(32);
@@ -1019,6 +1031,7 @@ section.HomeNews-Swiper {
         width: 100%;
         height: 3px;
         background: #3e5c2f;
+        transform: rotate(180deg);
         .swiper-scrollbar-drag {
           width: 100%;
           background: $lightBrown;
@@ -1029,7 +1042,7 @@ section.HomeNews-Swiper {
   .NewsNavigation {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: 48px;
     margin-bottom: rems(5);
     display: flex;
@@ -1046,11 +1059,13 @@ section.HomeNews-Swiper {
       }
     }
     .swiper-button-next {
-      right: 0;
+      // right: 0;
+      left: rems(62);
+      right: auto;
     }
     .swiper-button-prev {
-      right: rems(62);
-      left: auto;
+      left: 0;
+      right: auto;
       &:after {
         transform: rotate(180deg);
       }
@@ -1210,14 +1225,15 @@ CSV Css Start
 .EventSwiper {
   .evntNavigation {
     .btn ~ .swiper-pagination {
-      right: 130px;
+      left: 130px;
+      transform: rotate(180deg);
     }
   }
 }
 .CSVEvents {
   .evntNavigation {
     .swiper-pagination {
-      right: 130px;
+      left: 130px;
     }
     @media (max-width: 560px) {
       flex-direction: column;
@@ -1269,9 +1285,9 @@ CSV Css Start
   padding-bottom: 2rem;
   @media (min-width: 1100px) {
     border: 0;
-    border-right: 1px #8a7158 solid;
+    border-left: 1px #8a7158 solid;
     padding: 0;
-    padding-right: 2rem;
+    padding-left: 2rem;
   }
   img {
     max-height: 371px;
@@ -1290,7 +1306,7 @@ CSV Css Start
 }
 .eNewsLetter_smallItem {
   @media (min-width: 1100px) {
-    margin-left: rems(55);
+    margin-right: rems(55);
   }
   img {
     max-height: 163px;
@@ -1355,17 +1371,22 @@ section.CSV-LocalBusiness {
     }
   }
   .NewsNavigation {
-    left: rems(32);
+    right: rems(32);
+    left: 0;
     top: rems(23);
     .swiper-pagination {
-      left: 7rem;
+      right: 7rem;
+      transform: rotate(180deg);
     }
     .swiper-button-next {
-      left: 3rem;
+      // left: 3rem;
+      right: 0 !important;
+      left: auto;
     }
     .swiper-button-prev {
-      left: 0 !important;
-      right: auto;
+      // left: 0 !important;
+      // right: auto;
+      right: 3rem;
     }
   }
 }
@@ -1524,7 +1545,7 @@ section.CSV-LocalBusiness {
   background-size: 20px;
 }
 .custom-control {
-  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   min-height: 2.5rem;
   &-label {
     font-size: rems(18);
@@ -1537,7 +1558,7 @@ section.CSV-LocalBusiness {
     }
     &:before,
     &:after {
-      left: -2.5rem;
+      right: -2.5rem;
     }
   }
   &-input {
@@ -1550,6 +1571,10 @@ section.CSV-LocalBusiness {
   }
 }
 .custom-checkbox {
+  .custom-control-input {
+    right: 0;
+    left: auto;
+  }
   .custom-control-input:checked ~ .custom-control-label:after {
     width: rems(32);
     height: rems(32);
@@ -1588,6 +1613,10 @@ section.CSV-LocalBusiness {
   &:hover {
     background-color: $lightBrown;
     color: $green;
+  }
+  .Cfile-upload {
+    right: 0;
+    left: auto !important;
   }
 }
 .file-caption {
