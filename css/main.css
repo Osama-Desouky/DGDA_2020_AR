@@ -4889,7 +4889,7 @@ section.CSV-LocalBusiness .NewsNavigation .swiper-button-prev { right: 3rem; }
 
 .browse-btn { border: 2px #365029 solid !important; border-radius: 6px !important; padding: 0 1rem; line-height: 2.3; cursor: pointer; }
 
-.browse-btn .icon-upload { top: 7px; position: relative; margin-right: 0.5rem; }
+.browse-btn .icon-upload { top: 7px; position: relative; margin-left: 0.5rem; }
 
 .browse-btn:hover { background-color: #bd9d7e; color: #365029; }
 

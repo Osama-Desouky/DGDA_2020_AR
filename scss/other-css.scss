@@ -48,12 +48,12 @@ body.inner {
           &:after {
             @include trans(0.3s);
             content: "";
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M11.188,10.012,1.583.275a.919.919,0,0,0-1.311,0,.945.945,0,0,0,0,1.326l9.606,9.737a.946.946,0,0,1,0,1.327L.271,22.4a.945.945,0,0,0,0,1.326.919.919,0,0,0,1.311,0l9.6-9.736A2.839,2.839,0,0,0,11.188,10.012Z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cg id='chevron_copy_2' data-name='chevron copy 2' transform='translate(24) rotate(90)'%3E%3Cpath id='Path' d='M10.2,20.4c-0.3,0-0.5-0.1-0.7-0.3l-9-9c-0.4-0.4-0.4-1,0-1.4l9-9c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-8.3,8.3l8.3,8.3c0.4,0.4,0.4,1,0,1.4C10.7,20.3,10.5,20.4,10.2,20.4z' fill='%23bd9d7e'/%3E%3C/g%3E%3C/svg%3E%0A");
             width: 48px;
             height: 24px;
             position: absolute;
             background-size: contain;
-            right: 0;
+            left: 0;
             background-repeat: no-repeat;
             -ms-transform: rotate(-90deg);
             -webkit-transform: rotate(-90deg);
@@ -63,7 +63,7 @@ body.inner {
           &:hover {
             background: rgb(245, 245, 245);
             &:after {
-              right: -5px;
+              left: -5px;
             }
           }
         }
@@ -103,17 +103,20 @@ body.inner {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.793' height='11.612' viewBox='0 0 17.793 11.612'%3E%3Cpath d='M12.452.126l.071.062L17.607,5.35a.653.653,0,0,1,.062.84l-.062.072-5.084,5.161a.629.629,0,0,1-.9,0,.653.653,0,0,1-.062-.84l.062-.072,4-4.059H.635A.646.646,0,0,1,.549,5.167l.086-.006H15.623l-4-4.059a.653.653,0,0,1-.062-.84l.062-.072A.629.629,0,0,1,12.452.126Z' fill='%23bd9d7e'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
             display: inline-block;
-            margin-left: 1rem;
+            margin-right: 1rem;
             -webkit-transition: inherit;
             -o-transition: inherit;
             transition: inherit;
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
           }
         }
         &:hover {
           i:after {
-            -webkit-transform: translateX(5px);
-            -ms-transform: translateX(5px);
-            transform: translateX(5px);
+            -webkit-transform: translateX(-5px) rotate(180deg);
+            -ms-transform: translateX(-5px) rotate(180deg);
+            transform: translateX(-5px) rotate(180deg);
           }
         }
       }
@@ -129,8 +132,11 @@ body.inner {
         }
       }
       .news {
-        // .news-item {
-        // }
+        .news-item {
+          .pl-md-2 {
+            padding-left: rems(15) !important;
+          }
+        }
         .article-item {
           .avatar {
             width: 86px;
@@ -155,6 +161,9 @@ body.inner {
                 -webkit-transition: inherit;
                 -o-transition: inherit;
                 transition: inherit;
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
               }
             }
             &:hover {
@@ -288,12 +297,12 @@ body.inner {
       top: -5.5rem;
       font-size: 16rem;
       position: absolute;
-      left: -2.8rem;
+      right: -2.8rem;
       font-family: sans-serif;
       color: #bd9d7e;
       font-weight: 500;
       @media (max-width: 1024px) {
-        left: 5px;
+        right: 5px;
       }
     }
   }
@@ -379,6 +388,8 @@ body.inner {
   }
   .custom-radio {
     .custom-control-input {
+      right: 0;
+      left: auto;
       & ~ .custom-control-label {
         &::before {
           border: 2px solid $green;
@@ -393,7 +404,7 @@ body.inner {
           height: 8px;
           border-radius: 50%;
           background: #365029;
-          left: -2.1rem;
+          right: -2.1rem;
           top: 0.47rem;
           opacity: 0;
         }
