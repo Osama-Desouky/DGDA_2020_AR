@@ -288,7 +288,9 @@ a:hover {
             &:after {
               position: absolute;
               left: 0;
-              transform: rotate(-180deg);
+              -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
             }
           }
         }
@@ -694,7 +696,7 @@ footer,
   font-weight: $lightW;
   color: inherit;
   margin-top: auto;
-  margin-left: auto;
+  margin-right: auto;
   @include trans(0.3s);
   i.chevron-right {
     transition: inherit;
@@ -708,6 +710,8 @@ footer,
       position: relative;
       margin-right: 1rem;
       transition: inherit;
+      -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
       transform: rotate(-180deg);
     }
   }
@@ -717,6 +721,8 @@ footer,
     i.chevron-right {
       &:after {
         // transform: translateX(5px);
+        -webkit-transform: translateX(-5px) rotate(-180deg);
+        -ms-transform: translateX(-5px) rotate(-180deg);
         transform: translateX(-5px) rotate(-180deg);
       }
     }
@@ -917,10 +923,14 @@ section.HomeEvents {
       left: 0;
       right: auto;
       &:after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
         transform: rotate(180deg);
       }
     }
     .swiper-pagination {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
       transform: rotate(180deg);
       padding-left: 6px;
     }
@@ -1031,6 +1041,8 @@ section.HomeNews-Swiper {
         width: 100%;
         height: 3px;
         background: #3e5c2f;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
         transform: rotate(180deg);
         .swiper-scrollbar-drag {
           width: 100%;
@@ -1067,6 +1079,8 @@ section.HomeNews-Swiper {
       left: 0;
       right: auto;
       &:after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
         transform: rotate(180deg);
       }
     }
@@ -1226,6 +1240,8 @@ CSV Css Start
   .evntNavigation {
     .btn ~ .swiper-pagination {
       left: 130px;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
       transform: rotate(180deg);
     }
   }
@@ -1376,6 +1392,8 @@ section.CSV-LocalBusiness {
     top: rems(23);
     .swiper-pagination {
       right: 7rem;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
       transform: rotate(180deg);
     }
     .swiper-button-next {
@@ -1514,6 +1532,8 @@ section.CSV-LocalBusiness {
 .back-link {
   width: rems(48);
   height: rems(48);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 
   &:after {
@@ -1525,6 +1545,8 @@ section.CSV-LocalBusiness {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
   }
 }
